@@ -38,13 +38,13 @@
         },
         "source": "Giving USA",
         "source_url": "https://givingusa.org/",
-        "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropyand tabulations of tax data, economic indicators, and demographics."
+        "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulations of tax data, economic indicators, and demographics."
       }
     ]
   },
   {
     "name": "Donor-Advised Funds",
-    "description": "Donor-advised funds (DAFs) are giving accounts established at public charities that allow donors to make a charitable contribution, receive an immediatetax deduction, and recommend grants over time.The public charity maintains legal control over the contributions and works with the donor who can advise on funding recommendations",
+    "description": "Donor-advised funds (DAFs) are giving accounts established at public charities that allow donors to make a charitable contribution, receive an immediate tax deduction, and recommend grants over time. The public charity maintains legal control over the contributions and works with the donor who can advise on funding recommendations.",
     "measures": [
       {
         "name": "Total value of contributions made to donor-advised funds",
@@ -77,7 +77,7 @@
         },
         "source": "National Philanthropic Trust",
         "source_url": "https://www.nptrust.org/reports/daf-report/",
-        "notes": "Estimates are drawn from a longitudinal study of a representative sample from 976 charitable sponsors that reported DAF assets in any year"
+        "notes": "Estimates are drawn from a longitudinal study of a representative sample from 976 charitable sponsors that reported DAF assets in any year."
       },
       {
         "name": "Total number of DAFs in the US",
@@ -110,7 +110,7 @@
         },
         "source": "National Philanthropic Trust",
         "source_url": "https://www.nptrust.org/reports/daf-report/",
-        "notes": "Estimates are drawn from a longitudinal study of a representative sample from 976 charitable sponsors that reported DAF assetsin any year."
+        "notes": "Estimates are drawn from a longitudinal study of a representative sample from 976 charitable sponsors that reported DAF assets in any year."
       },
       {
         "name": "Share of DAF contributions made as noncash assets at Fidelity Charitable",
