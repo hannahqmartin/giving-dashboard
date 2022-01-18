@@ -1,0 +1,166 @@
+[
+  {
+    "name": "Total Charitable Giving",
+    "description": "Charitable giving can occur through many different avenues for generosity. Here, we use one measure of aggregate charitable giving, which includes contributions from individuals, corporations, bequests, and foundations.",
+    "measures": [
+      {
+        "name": "Total charitable contributions",
+        "data": {
+          "unit": "B",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2015",
+              "value": "373.25"
+            },
+            {
+              "date": "2016",
+              "value": "390.05"
+            },
+            {
+              "date": "2017",
+              "value": "410.02"
+            },
+            {
+              "date": "2018",
+              "value": "427.71"
+            },
+            {
+              "date": "2019",
+              "value": "449.64"
+            },
+            {
+              "date": "2020",
+              "value": "471.44"
+            }
+          ]
+        },
+        "source": "Giving USA",
+        "source_url": "https://givingusa.org/",
+        "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropyand tabulations of tax data, economic indicators, and demographics."
+      }
+    ]
+  },
+  {
+    "name": "Donor-Advised Funds",
+    "description": "Donor-advised funds (DAFs) are giving accounts established at public charities that allow donors to make a charitable contribution, receive an immediatetax deduction, and recommend grants over time.The public charity maintains legal control over the contributions and works with the donor who can advise on funding recommendations",
+    "measures": [
+      {
+        "name": "Total value of contributions made to donor-advised funds",
+        "data": {
+          "unit": "B",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2016",
+              "value": "25.20"
+            },
+            {
+              "date": "2017",
+              "value": "30.85"
+            },
+            {
+              "date": "2018",
+              "value": "36.22"
+            },
+            {
+              "date": "2019",
+              "value": "36.69"
+            },
+            {
+              "date": "2020",
+              "value": "47.98"
+            }
+          ]
+        },
+        "source": "National Philanthropic Trust",
+        "source_url": "https://www.nptrust.org/reports/daf-report/",
+        "notes": "Estimates are drawn from a longitudinal study of a representative sample from 976 charitable sponsors that reported DAF assets in any year"
+      },
+      {
+        "name": "Total number of DAFs in the US",
+        "data": {
+          "unit": "",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2016",
+              "value": "290111"
+            },
+            {
+              "date": "2017",
+              "value": "469749"
+            },
+            {
+              "date": "2018",
+              "value": "732128"
+            },
+            {
+              "date": "2019",
+              "value": "864187"
+            },
+            {
+              "date": "2020",
+              "value": "1005099"
+            }
+          ]
+        },
+        "source": "National Philanthropic Trust",
+        "source_url": "https://www.nptrust.org/reports/daf-report/",
+        "notes": "Estimates are drawn from a longitudinal study of a representative sample from 976 charitable sponsors that reported DAF assetsin any year."
+      },
+      {
+        "name": "Share of DAF contributions made as noncash assets at Fidelity Charitable",
+        "data": {
+          "unit": "%",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2015",
+              "value": "66"
+            },
+            {
+              "date": "2016",
+              "value": "60"
+            },
+            {
+              "date": "2017",
+              "value": "61"
+            },
+            {
+              "date": "2018",
+              "value": "63"
+            },
+            {
+              "date": "2019",
+              "value": "62"
+            },
+            {
+              "date": "2020",
+              "value": "68"
+            }
+          ]
+        },
+        "source": "Fidelity Charitable",
+        "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html",
+        "notes": "Estimates are calculated using data from about 154,430 giving accounts in Fidelity Charitable’s internal reporting database."
+      },
+      {
+        "name": "Total dollars contributed to DAFs at community foundations",
+        "data": {
+          "unit": "B",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2019",
+              "value": "6.2"
+            }
+          ]
+        },
+        "source": "Community Foundation Awareness Initiative",
+        "source_url": "https://www.commfoundations.com/blog/2021/3/2/grants-from-community-foundation-donor-advised-funds-soar-as-covid-19-inspires-wave-of-giving",
+        "notes": "Estimates are sourced from a non-representative survey of 84 US community foundations. Study conducted between late 2020 and early 2021."
+      }
+    ]
+  }
+]

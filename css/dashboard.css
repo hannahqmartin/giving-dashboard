@@ -1,0 +1,97 @@
+#container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+  /* background-color: #cfe8f3; */
+}
+
+#dashboard {
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+.indicator {
+  /* margin: 0px 15px;
+  padding: 15px 0px; */
+  border-bottom: 1px solid darkgray;
+  border-spacing: 15px;
+}
+
+.indicator:last-child {
+  border: 0;
+}
+
+.details {
+  display: none;
+}
+
+.show {
+  display:block;
+}
+
+.summary {
+  cursor: pointer;
+}
+
+.summary .summary-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.summary .summary-measures {
+  color: lightgray;
+}
+
+.description {
+  font-style: italic;
+  font-size: 16px;
+  background-color: #e8f4fa;
+  border: 1px solid #e8f4fa;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.graphs {
+  background-color: #f5fafd;
+  border: 1px solid #f5fafd;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.description, .graphs {
+  padding: 10px 15px;
+}
+
+.graph {
+  margin-bottom: 15px;
+}
+
+/* .graphs {
+  padding: 15px 0px;
+}
+
+.graph {
+  padding: 0px 20px;
+} */
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #062635
+}
+
+.label, .tick text, .source a, .source span, .note span, .note {
+  font-size: 14px;
+}
+
+.source span, .note span {
+  font-weight: 700;
+}
+
+@media (max-width: 770px) {
+
+  #container {
+    margin: 0 16px;
+  }
+}
