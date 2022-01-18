@@ -8,13 +8,24 @@ Promise.all([
   let donations = data[0];
   console.log(donations);
 
+  const isMobile = $(window).width() < 770;
+
   const circleRadius = 2.5,
-        labelYOffset = 10,
-        indicatorPadding = 15,
-        chartPadding = 15;
+        labelYOffset = 10;
+  let indicatorPadding, chartPadding;
 
-  const graphWidth = ($("#container").width() - 2 * indicatorPadding - 4 * chartPadding - 40) / 2
+  let graphWidth;
+  if (isMobile) {
+    indicatorPadding = 10;
+    chartPadding = 10;
+    graphWidth = ($("#container").width() - 2 * indicatorPadding - 2 * chartPadding - 40);
+  } else {
+    indicatorPadding = 15;
+    chartPadding = 15;
+    graphWidth = ($("#container").width() - 2 * indicatorPadding - 4 * chartPadding - 40) / 2;
+  }
 
+  let heightl
   const margin = {top: 20, right: 30, bottom: 20, left: 30},
     width = graphWidth - margin.left - margin.right,
     height = graphWidth / 2 - margin.top - margin.bottom;
