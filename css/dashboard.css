@@ -23,6 +23,7 @@
 
 .details {
   display: none;
+  margin-bottom: 15px;
 }
 
 .show {
@@ -31,6 +32,7 @@
 
 .summary {
   cursor: pointer;
+  margin: 15px 0px;
 }
 
 .summary .summary-name {
@@ -63,8 +65,12 @@
   padding: 10px 15px;
 }
 
+.row {
+  margin-bottom: 20px;
+}
+
 .graph {
-  margin-bottom: 15px;
+  vertical-align: top;
 }
 
 /* .graphs {
@@ -79,6 +85,11 @@
   font-size: 16px;
   font-weight: 700;
   color: #062635
+}
+
+.unit {
+  font-size: 14px;
+  font-style: italic;
 }
 
 .label, .tick text, .source a, .source span, .note span, .note {

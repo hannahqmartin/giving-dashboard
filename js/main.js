@@ -15,7 +15,7 @@ Promise.all([
 
   const graphWidth = ($("#container").width() - 2 * indicatorPadding - 4 * chartPadding - 40) / 2
 
-  const margin = {top: 20, right: 20, bottom: 20, left: 20},
+  const margin = {top: 20, right: 30, bottom: 20, left: 30},
     width = graphWidth - margin.left - margin.right,
     height = graphWidth / 2 - margin.top - margin.bottom;
 
@@ -53,6 +53,7 @@ Promise.all([
       d.data.values.forEach(function(v){
         v.cx = d.xScale(d.parseDate(v.date));
         v.cy = d.yScale(v.value);
+        v.label = v.value + d.data.unit;
       });
     })
   })
@@ -66,7 +67,7 @@ Promise.all([
         return nameNoSpaces(d.name);
       })
       .style("margin", "0px " + indicatorPadding + "px")
-      .style("padding", indicatorPadding + "px 0px")
+      // .style("padding", indicatorPadding + "px 0px")
 
   divs.append("div")
     .attr("class", "summary")
@@ -103,9 +104,20 @@ Promise.all([
   const graphsDiv = divInfo.append("div")
     .attr("class", "graphs")
 
-  const graphDiv = graphsDiv.selectAll(".graph")
+  const rowDivs = graphsDiv.selectAll("div")
     .data(function(d){
-      return d.measures;
+      return d.measures.reduce(function(result, value, index, array) {
+        if (index % 2 === 0)
+          result.push(array.slice(index, index + 2));
+        return result;
+      }, []);
+    })
+    .join("div")
+      .attr("class", "row")
+
+  const graphDiv = rowDivs.selectAll(".graph")
+    .data(function(d){
+      return d;
     })
     .join("div")
       .attr("class", "graph")
@@ -116,7 +128,13 @@ Promise.all([
   graphDiv.append("div")
     .attr("class", "title")
     .html(function(d){
-      return d.name
+      return d.name;
+    })
+
+  graphDiv.append("div")
+    .attr("class", "unit")
+    .html(function(d){
+      return d.data.unit_string;
     })
 
   const graphs = graphDiv.append("svg")
@@ -178,7 +196,7 @@ Promise.all([
       // .attr("fill", "steelblue")
       .style("text-align", "middle")
       .text(function(d){
-        return d.value;
+        return d.label;
       })
       .attr("x", function(d){
         let rect = d3.select(this).node().getBoundingClientRect();
