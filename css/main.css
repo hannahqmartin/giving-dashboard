@@ -491,7 +491,7 @@ a {
 footer {
     position: relative;
     background-color: #f1f2f2;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     padding-bottom: 25px;
     bottom: 0;
     overflow: hidden;
@@ -712,9 +712,9 @@ p.creditsWho > a {
     line-height: 22px;
   }
 
-  footer {
+  /* footer {
     margin-top: 2.667rem;
-  }
+  } */
 
   #intro {
     margin: 40px 14px 24px 14px;

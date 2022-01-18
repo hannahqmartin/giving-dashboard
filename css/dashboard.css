@@ -1,13 +1,20 @@
+#container-background {
+  width: 100%;
+  background-color: #cfe8f3;
+  padding: 80px 0;
+}
+
 #container {
   max-width: 760px;
   margin: 0 auto;
   padding-bottom: 0px;
-  /* background-color: #cfe8f3; */
 }
 
 #dashboard {
   border: 1px solid #333;
   border-radius: 10px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .indicator {
@@ -21,6 +28,10 @@
   border: 0;
 }
 
+.indicator::after {
+
+}
+
 .details {
   display: none;
   margin-bottom: 15px;
@@ -31,9 +42,60 @@
 }
 
 .summary {
+  position: relative;
   cursor: pointer;
   margin: 15px 0px;
 }
+
+.summary::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: -50%;
+  right: 0;
+  /* z-index: -1; */
+  background-image: url("../img/icon-chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 12px);
+  background-position-y: 50%;
+  background-size: 16px;
+}
+
+.summary.checked::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: -50%;
+  left: calc(100% - 40px);
+  /* z-index: -1; */
+  background-image: url("../img/icon-chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 12px);
+  background-position-y: 50%;
+  background-size: 16px;
+
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* .summary.checked {
+  background-image: url("../img/icon-chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 12px);
+  background-position-y: 50%;
+  background-size: 16px;
+
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+} */
 
 .summary .summary-name {
   text-transform: uppercase;

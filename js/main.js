@@ -82,6 +82,9 @@ Promise.all([
       return '<span class="summary-name">' + d.name + '</span><span class="summary-measures">' + d.measures.length + " " + textMeasures + '</span>';
     })
     .on("click", function(event, d){
+      let summary = d3.select(this);
+      summary.classed("checked", !summary.classed("checked"))
+
       let details = d3.select("#" + nameNoSpaces(d.name) + " .details");
       details.classed("show", !details.classed("show"));
 
