@@ -381,6 +381,83 @@
     ]
   },
   {
+    "name": "Impact investing",
+    "description": "Impact investments intentionally seek social and environmental impact as well as financial returns and offer a way beyond charitable giving for individuals and institutions to have an impact.",
+    "measures": [
+      {
+        "name": "Share of affluent households who participate in impact investing",
+        "data": {
+          "unit": "%",
+          "unit_string": "in percent",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2017",
+              "value": "7.2"
+            },
+            {
+              "date": "2020",
+              "value": "13.2"
+            }
+          ]
+        },
+        "source": "Bank of America/IUPUI Lilly School of Philanthropy",
+        "source_url": "https://www.privatebank.bankofamerica.com/articles/2021-bank-of-america-study-how-affluent-households-gave-back-in-2020.html",
+        "notes": "Estimates are based on 2021 nationally representative random sample of 1,626 high-net-worth households and includes in-depth analysis based on age, gender, race, and sexual identity by IUPUI’s Lilly School of Philanthropy. High-net-worth households are defined as households with a net worth of $1M+ and/or have an annual income of $200,000+."
+      },
+      {
+        "name": "Total DAF assets in impact investment pools at Fidelity Charitable",
+        "data": {
+          "unit": "B",
+          "unit_string": "in billions of dollars",
+          "date_format": "",
+          "values": [
+            {
+              "date": "2017",
+              "value": "0.806"
+            },
+            {
+              "date": "2018",
+              "value": "0.936"
+            },
+            {
+              "date": "2019",
+              "value": "1.1"
+            },
+            {
+              "date": "2020",
+              "value": "1.8"
+            }
+          ]
+        },
+        "source": "Fidelity Charitable",
+        "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html",
+        "notes": "Estimates are calculated using data from 153,430 giving accounts in Fidelity Charitable’s internal reporting database."
+      },
+      {
+        "name": "Total amount of recoverable grantsby Fidelity Charitable DAFs to charities",
+        "data": {
+          "unit": "M",
+          "unit_string": "in millions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2019",
+              "value": "7.1"
+            },
+            {
+              "date": "2020",
+              "value": "15.4"
+            }
+          ]
+        },
+        "source": "Fidelity Charitable",
+        "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html",
+        "notes": "Recoverable grants are donations that can be repaid under some circumstances. Estimates are calculated using data from 153,430 giving accounts in Fidelity Charitable’s internal reporting database. Most recent study conducted January-December 2020."
+      }
+    ]
+  },
+  {
     "name": "Donor-Advised Funds",
     "description": "Donor-advised funds (DAFs) are giving accounts established at public charities that allow donors to make a charitable contribution, receive an immediate tax deduction, and recommend grants over time. The public charity maintains legal control over the contributions and works with the donor who can advise on funding recommendations.",
     "measures": [
