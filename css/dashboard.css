@@ -11,7 +11,7 @@
 }
 
 #dashboard {
-  border: 1px solid #333;
+  border: 1px solid #b5c9d2;
   border-radius: 10px;
   background-color: #FFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -45,6 +45,7 @@
   position: relative;
   cursor: pointer;
   margin: 15px 0px;
+  font-size: 16px;
 }
 
 .summary::after {
@@ -101,19 +102,23 @@
   text-transform: uppercase;
   font-weight: 700;
   margin-right: 10px;
+  color: #062635;
 }
 
 .summary .summary-measures {
-  color: lightgray;
+  color: #6a7d86;
 }
 
 .description {
   font-style: italic;
+  color: #6c838e;
   font-size: 16px;
+  line-height: 24px;
   background-color: #e8f4fa;
   border: 1px solid #e8f4fa;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  padding: 20px 25px;
 }
 
 .graphs {
@@ -123,12 +128,12 @@
   border-bottom-right-radius: 10px;
 }
 
-.description, .graphs {
+.graphs {
   padding: 10px 15px;
 }
 
 .row {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .graph {
@@ -154,13 +159,22 @@
   font-style: italic;
 }
 
-.label, .tick text, .source a, .source span, .note span, .note {
+.label, .tick text, .source, .source a, .source span, .note span, .note {
   font-size: 14px;
 }
+
+ .source, .source a, .source span, .note span, .note {
+   line-height: 21px;
+ }
 
 .source span, .note span {
   font-weight: 700;
 }
+
+.source {
+  margin-bottom: 4px;
+}
+
 
 @media (max-width: 770px) {
 

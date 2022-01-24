@@ -28,7 +28,7 @@ Promise.all([
   let heightl
   const margin = {top: 20, right: 30, bottom: 20, left: 30},
     width = graphWidth - margin.left - margin.right,
-    height = graphWidth / 2 - margin.top - margin.bottom;
+    height = graphWidth * 4.5 / 10 - margin.top - margin.bottom;
 
   donations.forEach(function(n){
     n.measures.forEach(function(d){
