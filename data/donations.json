@@ -43,6 +43,120 @@
     ]
   },
   {
+    "name": "Individual giving",
+    "description": "Individuals, as opposed to institutions, have long represented the largest source of charitable giving in the United States. Giving by the ultra-wealthy continues to represent a disproportionately large share of giving by individuals.",
+    "measures": [
+      {
+        "name": "Share of total charitable contributions made by individuals",
+        "data": {
+          "unit": "%",
+          "unit_string": "in percent",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2015",
+              "value": "71"
+            },
+            {
+              "date": "2016",
+              "value": "72"
+            },
+            {
+              "date": "2017",
+              "value": "70"
+            },
+            {
+              "date": "2018",
+              "value": "68"
+            },
+            {
+              "date": "2019",
+              "value": "69"
+            },
+            {
+              "date": "2020",
+              "value": "69"
+            }
+          ]
+        },
+        "source": "Giving USA",
+        "source_url": "https://givingusa.org/",
+        "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics."
+      },
+      {
+        "name": "Total charitable contributions made by individuals",
+        "data": {
+          "unit": "B",
+          "unit_string": "in billions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2015",
+              "value": "264.58"
+            },
+            {
+              "date": "2016",
+              "value": "281.86"
+            },
+            {
+              "date": "2017",
+              "value": "286.65"
+            },
+            {
+              "date": "2018",
+              "value": "292.09"
+            },
+            {
+              "date": "2019",
+              "value": "309.66"
+            },
+            {
+              "date": "2020",
+              "value": "324.10"
+            }
+          ]
+        },
+        "source": "Giving USA",
+        "source_url": "https://givingusa.org/",
+        "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics."
+      },
+      {
+        "name": "Share of charitable contributions made by ultra-wealthy individuals",
+        "data": {
+          "unit": "%",
+          "unit_string": "in percent",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2019",
+              "value": "20"
+            }
+          ]
+        },
+        "source": "WealthX",
+        "source_url": "https://www.wealthx.com/insights-resources/reports/",
+        "notes": "Estimates are calculated by WealthX’s Philanthropic Giving Model, which analyzes the annual philanthropic donations made by ultra-wealthy individuals in each market (those with a net worth of more than $30 million). WealthX then uses its proprietary Wealth and Investable Assets Model to estimate total philanthropic giving (as a proportion of total wealth) in each region. These figures exclude giving by corporations as well as businesses owned by the ultra-wealthy."
+      },
+      {
+        "name": "Share of charitable donations lessthan $5,001",
+        "data": {
+          "unit": "%",
+          "unit_string": "in percent",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2020",
+              "value": "28.9"
+            }
+          ]
+        },
+        "source": "GivingTuesday's Giving Lab",
+        "source_url": "https://www.givingtuesday.org/insights/giving-lab/?co-item=giving-in-unprecedented-times-609a01a64ec3825b6b24bd26",
+        "notes": "Estimates are based on GivingTuesday’s Growth in Giving dataset, which is a longitudinal database of donation transactions by individuals in the US aggregated from many sources (including customer relationship management databases and other giving platforms). Transactions included in this database are limited to those made to 501(c)3s with no more than $25M in contributions and with data from three consecutive years."
+      }
+    ]
+  },
+  {
     "name": "Donor-Advised Funds",
     "description": "Donor-advised funds (DAFs) are giving accounts established at public charities that allow donors to make a charitable contribution, receive an immediate tax deduction, and recommend grants over time. The public charity maintains legal control over the contributions and works with the donor who can advise on funding recommendations.",
     "measures": [
