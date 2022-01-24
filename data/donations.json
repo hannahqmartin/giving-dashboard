@@ -157,6 +157,230 @@
     ]
   },
   {
+    "name": "Noncash Charitable Contributions",
+    "description": "Not all giving comes in the form of cash. Many organizations accept non-cash assets, including publicly traded securities (stocks, bonds and mutual funds) and non-publicly traded assets (private stock, restricted stock, and limited partnership interests). These contributions can be itemized on taxpayers’ yearly tax returns.",
+    "measures": [
+      {
+        "name": "Total annual value of noncash charitable contributions",
+        "data": {
+          "unit": "M",
+          "unit_string": "in million of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2013",
+              "value": "51.591"
+            },
+            {
+              "date": "2014",
+              "value": "65.330"
+            },
+            {
+              "date": "2015",
+              "value": "70.870"
+            },
+            {
+              "date": "2016",
+              "value": "79.569"
+            },
+            {
+              "date": "2017",
+              "value": "88.062"
+            },
+            {
+              "date": "2018",
+              "value": "83.501"
+            }
+          ]
+        },
+        "source": "IRS SOI Tax Stats: Individual Income Tax Returns Complete Report",
+        "source_url": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-returns-complete-report-publication-1304#_IndReturns",
+        "notes": "Noncash (or “other than cash”) charitable contributions are calculated by the IRS Statistics of Income Division, aggregating data from itemized individual tax returns."
+      },
+      {
+        "name": "Share of non-cash assets among all itemized charitable contributions",
+        "data": {
+          "unit": "%",
+          "unit_string": "in percent",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2013",
+              "value": "26.5"
+            },
+            {
+              "date": "2014",
+              "value": "31.0"
+            },
+            {
+              "date": "2015",
+              "value": "31.9"
+            },
+            {
+              "date": "2016",
+              "value": "34.0"
+            },
+            {
+              "date": "2017",
+              "value": "34.4"
+            },
+            {
+              "date": "2018",
+              "value": "42.4"
+            }
+          ]
+        },
+        "source": "IRS SOI Tax Stats: Individual Income Tax Returns Complete Report",
+        "source_url": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-returns-complete-report-publication-1304#_IndReturns",
+        "notes": "Noncash (or “other than cash”) charitable contributions are calculated by the IRS Statistics of Income Division, aggregating data from itemized individual tax returns."
+      }
+    ]
+  },
+  {
+    "name": "Volunteering",
+    "description": "Volunteering is a core component of how individuals express generosity. Much of the data on volunteering registers how individuals help tax-exempt nonprofit institutions, but volunteers can also assist informal organizations and association.",
+    "measures": [
+      {
+        "name": "Share of Americans who volunteer",
+        "data": {
+          "unit": "%",
+          "unit_string": "in percent",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2002",
+              "value": "27.4"
+            },
+            {
+              "date": "2003",
+              "value": "28.8"
+            },
+            {
+              "date": "2004",
+              "value": "28.8"
+            },
+            {
+              "date": "2005",
+              "value": "28.8"
+            },
+            {
+              "date": "2006",
+              "value": "26.7"
+            },
+            {
+              "date": "2007",
+              "value": "26.2"
+            },
+            {
+              "date": "2008",
+              "value": "26.4"
+            },
+            {
+              "date": "2009",
+              "value": "26.8"
+            },
+            {
+              "date": "2010",
+              "value": "26.3"
+            },
+            {
+              "date": "2011",
+              "value": "26.8"
+            },
+            {
+              "date": "2012",
+              "value": "26.5"
+            },
+            {
+              "date": "2013",
+              "value": "25.4"
+            },
+            {
+              "date": "2014",
+              "value": "25.3"
+            },
+            {
+              "date": "2015",
+              "value": "24.9"
+            }
+          ]
+        },
+        "source": "Bureau of Labor Statisticsand Corporation for National and Community Service",
+        "source_url": "",
+        "notes": "Estimates pulled from the Current Population Survey Volunteering and Civic Life Supplement. This supplement was administered by the Bureau of Labor Statistics from 2002-2015 and recently transitioned to the Corporation for National and Community Service starting in 2017. The count of volunteers only includes persons who volunteered through or for an organization. The figures do not include persons who volunteered in a more informal manner."
+      },
+      {
+        "name": "Total hours volunteered",
+        "data": {
+          "unit": "B",
+          "unit_string": "in billion of hours",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2002",
+              "value": "8.029950"
+            },
+            {
+              "date": "2003",
+              "value": "8.345820"
+            },
+            {
+              "date": "2004",
+              "value": "8.490860"
+            },
+            {
+              "date": "2005",
+              "value": "8.237710"
+            },
+            {
+              "date": "2006",
+              "value": "8.098170"
+            },
+            {
+              "date": "2007",
+              "value": "8.091160"
+            },
+            {
+              "date": "2008",
+              "value": "8.003840"
+            },
+            {
+              "date": "2009",
+              "value": "8.089570"
+            },
+            {
+              "date": "2010",
+              "value": "8.082540"
+            },
+            {
+              "date": "2011",
+              "value": "8.464350"
+            },
+            {
+              "date": "2012",
+              "value": "8.519570"
+            },
+            {
+              "date": "2013",
+              "value": "8.295710"
+            },
+            {
+              "date": "2014",
+              "value": "8.701610"
+            },
+            {
+              "date": "2015",
+              "value": "8.429870"
+            }
+          ]
+        },
+        "source": "Bureau of Labor Statistics",
+        "source_url": "",
+        "notes": "Estimates pulled from the Current Population Survey Volunteering and Civic Life Supplement. This supplement was administered by the Bureau of Labor Statistics from 2002-2015 and recently transitioned to the Corporation for National and Community Service (CNCS) starting in 2017. The count of volunteers only includes persons who volunteered through or for an organization. The figures do not include persons who volunteered in a more informal manner."
+      }
+    ]
+  },
+  {
     "name": "Donor-Advised Funds",
     "description": "Donor-advised funds (DAFs) are giving accounts established at public charities that allow donors to make a charitable contribution, receive an immediate tax deduction, and recommend grants over time. The public charity maintains legal control over the contributions and works with the donor who can advise on funding recommendations.",
     "measures": [
