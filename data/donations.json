@@ -36,8 +36,12 @@
             }
           ]
         },
-        "source": "Giving USA",
-        "source_url": "https://givingusa.org/",
+        "sources": [
+          {
+            "source": "Giving USA",
+            "source_url": "https://givingusa.org/"
+          }
+        ],
         "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulations of tax data, economic indicators, and demographics."
       }
     ]
@@ -79,8 +83,12 @@
             }
           ]
         },
-        "source": "Giving USA",
-        "source_url": "https://givingusa.org/",
+        "sources": [
+          {
+            "source": "Giving USA",
+            "source_url": "https://givingusa.org/",
+          }
+        ],
         "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics."
       },
       {
@@ -116,8 +124,12 @@
             }
           ]
         },
-        "source": "Giving USA",
-        "source_url": "https://givingusa.org/",
+        "sources": [
+          {
+            "source": "Giving USA",
+            "source_url": "https://givingusa.org/"
+          }
+        ],
         "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics."
       },
       {
@@ -133,8 +145,12 @@
             }
           ]
         },
-        "source": "WealthX",
-        "source_url": "https://www.wealthx.com/insights-resources/reports/",
+        "sources": [
+          {
+            "source": "WealthX",
+            "source_url": "https://www.wealthx.com/insights-resources/reports/"
+          }
+        ],
         "notes": "Estimates are calculated by WealthX’s Philanthropic Giving Model, which analyzes the annual philanthropic donations made by ultra-wealthy individuals in each market (those with a net worth of more than $30 million). WealthX then uses its proprietary Wealth and Investable Assets Model to estimate total philanthropic giving (as a proportion of total wealth) in each region. These figures exclude giving by corporations as well as businesses owned by the ultra-wealthy."
       },
       {
@@ -150,8 +166,12 @@
             }
           ]
         },
-        "source": "GivingTuesday's Giving Lab",
-        "source_url": "https://www.givingtuesday.org/insights/giving-lab/?co-item=giving-in-unprecedented-times-609a01a64ec3825b6b24bd26",
+        "sources": [
+          {
+            "source": "GivingTuesday's Giving Lab",
+            "source_url": "https://www.givingtuesday.org/insights/giving-lab/?co-item=giving-in-unprecedented-times-609a01a64ec3825b6b24bd26"
+          }
+        ],
         "notes": "Estimates are based on GivingTuesday’s Growth in Giving dataset, which is a longitudinal database of donation transactions by individuals in the US aggregated from many sources (including customer relationship management databases and other giving platforms). Transactions included in this database are limited to those made to 501(c)3s with no more than $25M in contributions and with data from three consecutive years."
       }
     ]
@@ -193,8 +213,12 @@
             }
           ]
         },
-        "source": "IRS SOI Tax Stats: Individual Income Tax Returns Complete Report",
-        "source_url": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-returns-complete-report-publication-1304#_IndReturns",
+        "sources": [
+          {
+            "source": "IRS SOI Tax Stats: Individual Income Tax Returns Complete Report",
+            "source_url": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-returns-complete-report-publication-1304#_IndReturns"
+          }
+        ],
         "notes": "Noncash (or “other than cash”) charitable contributions are calculated by the IRS Statistics of Income Division, aggregating data from itemized individual tax returns."
       },
       {
@@ -230,8 +254,12 @@
             }
           ]
         },
-        "source": "IRS SOI Tax Stats: Individual Income Tax Returns Complete Report",
-        "source_url": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-returns-complete-report-publication-1304#_IndReturns",
+        "sources": [
+          {
+            "source": "IRS SOI Tax Stats: Individual Income Tax Returns Complete Report",
+            "source_url": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-returns-complete-report-publication-1304#_IndReturns"
+          }
+        ],
         "notes": "Noncash (or “other than cash”) charitable contributions are calculated by the IRS Statistics of Income Division, aggregating data from itemized individual tax returns."
       }
     ]
@@ -305,8 +333,12 @@
             }
           ]
         },
-        "source": "Bureau of Labor Statisticsand Corporation for National and Community Service",
-        "source_url": "",
+        "sources": [
+          {
+            "source": "Bureau of Labor Statisticsand Corporation for National and Community Service",
+            "source_url": ""
+          }
+        ],
         "notes": "Estimates pulled from the Current Population Survey Volunteering and Civic Life Supplement. This supplement was administered by the Bureau of Labor Statistics from 2002-2015 and recently transitioned to the Corporation for National and Community Service starting in 2017. The count of volunteers only includes persons who volunteered through or for an organization. The figures do not include persons who volunteered in a more informal manner."
       },
       {
@@ -374,8 +406,12 @@
             }
           ]
         },
-        "source": "Bureau of Labor Statistics",
-        "source_url": "",
+        "sources": [
+          {
+            "source": "Bureau of Labor Statistics",
+            "source_url": ""
+          }
+        ],
         "notes": "Estimates pulled from the Current Population Survey Volunteering and Civic Life Supplement. This supplement was administered by the Bureau of Labor Statistics from 2002-2015 and recently transitioned to the Corporation for National and Community Service (CNCS) starting in 2017. The count of volunteers only includes persons who volunteered through or for an organization. The figures do not include persons who volunteered in a more informal manner."
       }
     ]
@@ -401,8 +437,12 @@
             }
           ]
         },
-        "source": "Bank of America/IUPUI Lilly School of Philanthropy",
-        "source_url": "https://www.privatebank.bankofamerica.com/articles/2021-bank-of-america-study-how-affluent-households-gave-back-in-2020.html",
+        "sources": [
+          {
+            "source": "Bank of America/IUPUI Lilly School of Philanthropy",
+            "source_url": "https://www.privatebank.bankofamerica.com/articles/2021-bank-of-america-study-how-affluent-households-gave-back-in-2020.html"
+          }
+        ],
         "notes": "Estimates are based on 2021 nationally representative random sample of 1,626 high-net-worth households and includes in-depth analysis based on age, gender, race, and sexual identity by IUPUI’s Lilly School of Philanthropy. High-net-worth households are defined as households with a net worth of $1M+ and/or have an annual income of $200,000+."
       },
       {
@@ -430,8 +470,12 @@
             }
           ]
         },
-        "source": "Fidelity Charitable",
-        "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html",
+        "sources": [
+          {
+            "source": "Fidelity Charitable",
+            "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html"
+          }
+        ],
         "notes": "Estimates are calculated using data from 153,430 giving accounts in Fidelity Charitable’s internal reporting database."
       },
       {
@@ -451,8 +495,12 @@
             }
           ]
         },
-        "source": "Fidelity Charitable",
-        "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html",
+        "sources": [
+          {
+            "source": "Fidelity Charitable",
+            "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html"
+          }
+        ],
         "notes": "Recoverable grants are donations that can be repaid under some circumstances. Estimates are calculated using data from 153,430 giving accounts in Fidelity Charitable’s internal reporting database. Most recent study conducted January-December 2020."
       }
     ]
@@ -498,8 +546,12 @@
             }
           ]
         },
-        "source": "OpenSecrets",
-        "source_url": "https://www.opensecrets.org/elections-overview/donor-demographics?cycle=2020&display=A",
+        "sources": [
+          {
+            "source": "OpenSecrets",
+            "source_url": "https://www.opensecrets.org/elections-overview/donor-demographics?cycle=2020&display=A"
+          }
+        ],
         "notes": "Estimates are taken from the Federal Election Commission, aggregated every calendar year (January-December). Fluctuations in political donations year-to-year are partially attributable to election cycles (e.g., presidential election years vs. off-year elections)."
       },
       {
@@ -539,8 +591,12 @@
             }
           ]
         },
-        "source": "OpenSecrets",
-        "source_url": "https://www.opensecrets.org/elections-overview/donor-demographics?cycle=2020&display=A",
+        "sources": [
+          {
+            "source": "OpenSecrets",
+            "source_url": "https://www.opensecrets.org/elections-overview/donor-demographics?cycle=2020&display=A"
+          }
+        ],
         "notes": " Estimates are taken from the Federal Election Commission, aggregated every calendar year (January-December). Fluctuations in political donations year-to-year are in part attributable to election cycles (e.g., presidential election years vs. off-year elections)."
       },
       {
@@ -560,8 +616,12 @@
             }
           ]
         },
-        "source": "WinRed",
-        "source_url": "https://winred.com/blog/keys-to-raise-more-on-winred/",
+        "sources": [
+          {
+            "source": "WinRed",
+            "source_url": "https://winred.com/blog/keys-to-raise-more-on-winred/"
+          }
+        ],
         "notes": "An online donation platform launched in June 2019, WinRed allows individuals to donate to Republican candidates and campaigns nationwide. Estimates include aggregate annual donations made to political campaigns using WinRed’s platform."
       },
       {
@@ -581,8 +641,12 @@
             }
           ]
         },
-        "source": "ActBlue",
-        "source_url": "https://report.actblue.com/",
+        "sources": [
+          {
+            "source": "ActBlue",
+            "source_url": "https://report.actblue.com/"
+          }
+        ],
         "notes": " An online donation platform launched in 2004, ActBlue allows individuals to donate to Democratic candidates and campaigns nationwide. Estimates include aggregate annual donations made to political campaigns using ActBlue’s platform."
       }
     ]
@@ -624,8 +688,12 @@
             }
           ]
         },
-        "source": "Giving USA",
-        "source_url": "https://givingusa.org/",
+        "sources": [
+          {
+            "source": "Giving USA",
+            "source_url": "https://givingusa.org/"
+          }
+        ],
         "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics."
       },
       {
@@ -661,8 +729,12 @@
             }
           ]
         },
-        "source": "Giving USA",
-        "source_url": "https://givingusa.org/",
+        "sources": [
+          {
+            "source": "Giving USA",
+            "source_url": "https://givingusa.org/"
+          }
+        ],
         "notes": " Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics"
       }
     ]
@@ -700,8 +772,12 @@
             }
           ]
         },
-        "source": "World Banck",
-        "source_url": "https://openknowledge.worldbank.org/handle/10986/33634",
+        "sources": [
+          {
+            "source": "World Banck",
+            "source_url": "https://openknowledge.worldbank.org/handle/10986/33634"
+          }
+        ],
         "notes": "Estimates are drawn from Gross Domestic Product data from International Monetary Fund World Economic Outlook annually."
       }
     ]
@@ -739,8 +815,12 @@
             }
           ]
         },
-        "source": "National Philanthropic Trust",
-        "source_url": "https://www.nptrust.org/reports/daf-report/",
+        "sources": [
+          {
+            "source": "National Philanthropic Trust",
+            "source_url": "https://www.nptrust.org/reports/daf-report/"
+          }
+        ],
         "notes": "Estimates are drawn from a longitudinal study of a representative sample from 976 charitable sponsors that reported DAF assets in any year."
       },
       {
@@ -772,8 +852,12 @@
             }
           ]
         },
-        "source": "National Philanthropic Trust",
-        "source_url": "https://www.nptrust.org/reports/daf-report/",
+        "sources": [
+          {
+            "source": "National Philanthropic Trust",
+            "source_url": "https://www.nptrust.org/reports/daf-report/"
+          }
+        ],
         "notes": "Estimates are drawn from a longitudinal study of a representative sample from 976 charitable sponsors that reported DAF assets in any year."
       },
       {
@@ -809,8 +893,12 @@
             }
           ]
         },
-        "source": "Fidelity Charitable",
-        "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html",
+        "sources": [
+          {
+            "source": "Fidelity Charitable",
+            "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html"
+          }
+        ],
         "notes": "Estimates are calculated using data from about 154,430 giving accounts in Fidelity Charitable’s internal reporting database."
       },
       {
@@ -826,8 +914,12 @@
             }
           ]
         },
-        "source": "Community Foundation Awareness Initiative",
-        "source_url": "https://www.commfoundations.com/blog/2021/3/2/grants-from-community-foundation-donor-advised-funds-soar-as-covid-19-inspires-wave-of-giving",
+        "sources": [
+          {
+            "source": "Community Foundation Awareness Initiative",
+            "source_url": "https://www.commfoundations.com/blog/2021/3/2/grants-from-community-foundation-donor-advised-funds-soar-as-covid-19-inspires-wave-of-giving"
+          }
+        ],
         "notes": "Estimates are sourced from a non-representative survey of 84 US community foundations. Study conducted between late 2020 and early 2021."
       }
     ]
@@ -853,8 +945,12 @@
             }
           ]
         },
-        "source": "Benevity",
-        "source_url": "https://benevity.com/impactlabs",
+        "sources": [
+          {
+            "source": "Benevity",
+            "source_url": "https://benevity.com/impactlabs"
+          }
+        ],
         "notes": "Benevity provides software that facilitates workplace giving and is used by many Fortune 500 companies. Estimates use Benevity’s master database which includes activities of more than 650 companies, including clients, users of the software and the community of causes."
       },
       {
@@ -870,8 +966,12 @@
             }
           ]
         },
-        "source": "America’s Charities",
-        "source_url": "https://www.charities.org/news/america%E2%80%99s-charities-releases-groundbreaking-report-%E2%80%9Csnapshot-2017-what-us-employees-think-about",
+        "sources": [
+          {
+            "source": "America’s Charities",
+            "source_url": "https://www.charities.org/news/america%E2%80%99s-charities-releases-groundbreaking-report-%E2%80%9Csnapshot-2017-what-us-employees-think-about"
+          }
+        ],
         "notes": "Estimates are drawn from a 2017 survey conducted by America’s Charites of 1586 employees, representing 18 industry groups (education, financial, government, healthcare, technology, nonprofit, professional services, and consumer products).This figure is the most comprehensive and recent data point to capture the scale of workplace giving."
       },
       {
@@ -984,8 +1084,12 @@
             }
           ]
         },
-        "source": "Workplace Giving Alliance",
-        "source_url": "https://www.wg-alliance.org/research.html",
+        "sources": [
+          {
+            "source": "Workplace Giving Alliance",
+            "source_url": "https://www.wg-alliance.org/research.html"
+          }
+        ],
         "notes": "The Combined Federal Campaign (CFC) is a federal government workplace giving campaign that allows federal employees and retirees to pledge monetary support to approved charities. Summary figures are released by the Office of Personnel Management and include aggregated pledges to charities by federal employees participating in the CFC campaign."
       },
       {
@@ -1017,8 +1121,12 @@
             }
           ]
         },
-        "source": "CECP Giving in Numbers",
-        "source_url": "https://cecp.co/home/resources/giving-in-numbers/",
+        "sources": [
+          {
+            "source": "CECP Giving in Numbers",
+            "source_url": "https://cecp.co/home/resources/giving-in-numbers/"
+          }
+        ],
         "notes": "Estimates for aggregate total giving are based on the sum of the total investments of all companies participating in the Giving in Number survey, which asks companies to report total contributions on a fiscal year basis (end date for 12 months of data)."
       }
     ]
