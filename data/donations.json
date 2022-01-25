@@ -1745,5 +1745,69 @@
         "notes": "DonorsChoose allows teachers to set up crowdfunding campaigns for classroom projects. Estimates are drawn from DonorsChoose’s public tax records, isolating the contributions and grants component of their annual total revenue."
       }
     ]
+  },
+  {
+    "name": "Giving Days",
+    "description": "Giving days, which are organized efforts to mobilize large-scale donations, often use hashtags and social media to motivate potential donors. The largest giving day, GivingTuesday, the Tuesday after Thanksgiving, was launched in the US in 2012 and is now hosted in more than 70 countries worldwide.",
+    "measures": [
+      {
+        "name": "Total dollars donated in the US on GivingTuesday ",
+        "data": {
+          "unit": "B",
+          "unit_string": "in billions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2019",
+              "value": "1.97"
+            },
+            {
+              "date": "2020",
+              "value": "2.47"
+            },
+            {
+              "date": "2021",
+              "value": "2.7"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "GivingTuesday Data Collaborative",
+            "source_url": "https://www.givingtuesday.org/about/impact/"
+          }
+        ],
+        "notes": "Estimates are based on GivingTuesday Data Collaborative’s statistical model that estimates online and offline giving."
+      },
+      {
+        "name": "Total US online donations made on GivingTuesday ",
+        "data": {
+          "unit": "M",
+          "unit_string": "in millions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2017",
+              "value": "2.5"
+            },
+            {
+              "date": "2018",
+              "value": "3.8"
+            },
+            {
+              "date": "2019",
+              "value": "4.3"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "GivingTuesday Data Collaborative",
+            "source_url": "https://www.givingtuesday.org/about/impact/"
+          }
+        ],
+        "notes": "Estimates are based on GivingTuesday Data Collaborative’s aggregation of transaction data from their network of platform reports each year."
+      }
+    ]
   }
 ]
