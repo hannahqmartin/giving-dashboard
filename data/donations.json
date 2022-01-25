@@ -458,6 +458,136 @@
     ]
   },
   {
+    "name": "Political giving",
+    "description": "Traditionally, giving to political campaigns has not been considered a form of charitable giving. But the lines between political and charitable giving are becoming increasingly blurred through giving vehicles such as limited liability companies. Donations to party-focused organizations such as WinRed or ActBlue as well as donations to individual candidates or campaigns comprise political giving. (Gifts to 501(c)4s or political action committees are not included in this summary.)",
+    "measures": [
+      {
+        "name": "Total donors that gave over $200 to a political campaign",
+        "data": {
+          "unit": "M",
+          "unit_string": "im millions",
+          "date_format": "%y",
+          "values": [
+            {
+              "date": "2008",
+              "value": "1.337043"
+            },
+            {
+              "date": "2010",
+              "value": "0.809229"
+            },
+            {
+              "date": "2012",
+              "value": "1.255354"
+            },
+            {
+              "date": "2014",
+              "value": "0.725536"
+            },
+            {
+              "date": "2016",
+              "value": "1.664805"
+            },
+            {
+              "date": "2018",
+              "value": "1.529533"
+            },
+            {
+              "date": "2020",
+              "value": "4.705128"
+            }
+          ]
+        },
+        "source": "OpenSecrets",
+        "source_url": "https://www.opensecrets.org/elections-overview/donor-demographics?cycle=2020&display=A",
+        "notes": "Estimates are taken from the Federal Election Commission, aggregated every calendar year (January-December). Fluctuations in political donations year-to-year are partially attributable to election cycles (e.g., presidential election years vs. off-year elections)."
+      },
+      {
+        "name": "Total money contributed to political campaigns from donations over $200",
+        "data": {
+          "unit": "B",
+          "unit_string": "in billions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2008",
+              "value": "2.654167309"
+            },
+            {
+              "date": "2010",
+              "value": "1.587180200"
+            },
+            {
+              "date": "2012",
+              "value": "2.837298790"
+            },
+            {
+              "date": "2014",
+              "value": "1.688028475"
+            },
+            {
+              "date": "2016",
+              "value": "4.500006270"
+            },
+            {
+              "date": "2018",
+              "value": "4.025734480"
+            },
+            {
+              "date": "2020",
+              "value": "9.958511657"
+            }
+          ]
+        },
+        "source": "OpenSecrets",
+        "source_url": "https://www.opensecrets.org/elections-overview/donor-demographics?cycle=2020&display=A",
+        "notes": " Estimates are taken from the Federal Election Commission, aggregated every calendar year (January-December). Fluctuations in political donations year-to-year are in part attributable to election cycles (e.g., presidential election years vs. off-year elections)."
+      },
+      {
+        "name": "Money donated to WinRed",
+        "data": {
+          "unit": "B",
+          "unit_string": "in billions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2019",
+              "value": "0.101"
+            },
+            {
+              "date": "2020",
+              "value": "2.2"
+            }
+          ]
+        },
+        "source": "WinRed",
+        "source_url": "https://winred.com/blog/keys-to-raise-more-on-winred/",
+        "notes": "An online donation platform launched in June 2019, WinRed allows individuals to donate to Republican candidates and campaigns nationwide. Estimates include aggregate annual donations made to political campaigns using WinRed’s platform."
+      },
+      {
+        "name": "Money donated to ActBlue",
+        "data": {
+          "unit": "B",
+          "unit_string": "in billions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2019",
+              "value": "1.05"
+            },
+            {
+              "date": "2020",
+              "value": "4.02"
+            }
+          ]
+        },
+        "source": "ActBlue",
+        "source_url": "https://report.actblue.com/",
+        "notes": " An online donation platform launched in 2004, ActBlue allows individuals to donate to Democratic candidates and campaigns nationwide. Estimates include aggregate annual donations made to political campaigns using ActBlue’s platform."
+      }
+    ]
+  },
+  {
     "name": "Donor-Advised Funds",
     "description": "Donor-advised funds (DAFs) are giving accounts established at public charities that allow donors to make a charitable contribution, receive an immediate tax deduction, and recommend grants over time. The public charity maintains legal control over the contributions and works with the donor who can advise on funding recommendations.",
     "measures": [
