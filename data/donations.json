@@ -1363,5 +1363,203 @@
         "notes": "Estimates are calculated using data from 153,430 giving accounts in Fidelity Charitable’s internal reporting database. Study conducted January-December 2020."
       }
     ]
+  },
+  {
+    "name": "Donor participation",
+    "description": "One of the distinguishing characteristics of charitable giving in the US has long been the large share of Americans who report giving to charitable organizations. But in recent years, research suggests that share has been in steady decline. Whether that decline in the “donor pool” reflects a lessening or a rechanneling of charitable giving is a major question confronting researchers.",
+    "measures": [
+      {
+        "name": "Share of US households who report donating money to one or more charitable organization in the last year",
+        "data": {
+          "unit": "%",
+          "unit_string": "in percent",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2000",
+              "value": "66"
+            },
+            {
+              "date": "2002",
+              "value": "68"
+            },
+            {
+              "date": "2004",
+              "value": "67"
+            },
+            {
+              "date": "2006",
+              "value": "65"
+            },
+            {
+              "date": "2008",
+              "value": "65"
+            },
+            {
+              "date": "2010",
+              "value": "61"
+            },
+            {
+              "date": "2012",
+              "value": "59"
+            },
+            {
+              "date": "2014",
+              "value": "56"
+            },
+            {
+              "date": "2016",
+              "value": "53"
+            },
+            {
+              "date": "2018",
+              "value": "50"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "Indiana University Lilly Family School of Philanthropy",
+            "source_url": "https://scholarworks.iupui.edu/handle/1805/26290"
+          }
+        ],
+        "notes": "Data from The Indiana University Lilly Family School of Philanthropy’s Philanthropy Panel Study (PPS), which is a module of the University of Michigan’s Panel Study of Income Dynamics (PSID). The PPS is biennial surveys with data collected in odd years about behaviors in even years (e.g., the 2019 wave of the PPS was collected in 2019 about giving in 2018), with a sample size of 7,000-9,000 per wave. The PPS limits questions about giving to households who gave at least $25. Therefore, individuals or household who donated between $1 and $24 are marked as non-donors in the PPS data."
+      },
+      {
+        "name": "Share of Americans who report donating money to a charitable organization in the last year",
+        "data": {
+          "unit": "%",
+          "unit_string": "in percent",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2001",
+              "value": "86"
+            },
+            {
+              "date": "2003",
+              "value": "82"
+            },
+            {
+              "date": "2005",
+              "value": "87"
+            },
+            {
+              "date": "2008",
+              "value": "83"
+            },
+            {
+              "date": "2009",
+              "value": "79"
+            },
+            {
+              "date": "2013",
+              "value": "83"
+            },
+            {
+              "date": "2014",
+              "value": "56"
+            },
+            {
+              "date": "2017",
+              "value": "83"
+            },
+            {
+              "date": "2020",
+              "value": "73"
+            },
+            {
+              "date": "2021",
+              "value": "81"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "Gallup",
+            "source_url": "https://news.gallup.com/poll/310880/percentage-americans-donating-charity-new-low.aspx"
+          }
+        ],
+        "notes": "Estimates rely on telephone interviews conducted by pollsters with a random sample of more than 1000 adults living in all 50 states and the District of Columbia. Respondents are asked separately about donating money/volunteering time to charitable organizations."
+      },
+      {
+        "name": "Percent change in total number of donors from previous year ",
+        "data": {
+          "unit": "%",
+          "unit_string": "in percent",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2015",
+              "value": "2"
+            },
+            {
+              "date": "2016",
+              "value": "0.6"
+            },
+            {
+              "date": "2017",
+              "value": "0.7"
+            },
+            {
+              "date": "2018",
+              "value": "-2.8"
+            },
+            {
+              "date": "2019",
+              "value": "-3.0"
+            },
+            {
+              "date": "2020",
+              "value": "7.3"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "AFP/Fundraising Effectiveness Project",
+            "source_url": "https://afpglobal.org/fepreportsdownloadcenter"
+          }
+        ],
+        "notes": "Estimates of total donors are calculated by the Fundraising Effectiveness Project using anonymized giving transaction data from a variety of donor softwares, such as Bloomerang, DonorPerfect, ETapestry, NeonOne, and Clearview. Surveys conducted each year from 2015 to 2019 and included 10,640 non-profit organizations in 2019."
+      },
+      {
+        "name": "Donor retention rate",
+        "data": {
+          "unit": "%",
+          "unit_string": "in percent",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2016",
+              "value": "45.1"
+            },
+            {
+              "date": "2017",
+              "value": "47.2"
+            },
+            {
+              "date": "2018",
+              "value": "44.6"
+            },
+            {
+              "date": "2019",
+              "value": "45.4"
+            },
+            {
+              "date": "2020",
+              "value": "43.6"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "AFP/Fundraising Effectiveness Project",
+            "source_url": "https://afpglobal.org/fepreportsdownloadcenter"
+          }
+        ],
+        "notes": "Estimates of total donors are calculated by the Fundraising Effectiveness Project using anonymized giving transaction data from a variety of donor softwares, such as Bloomerang, DonorPerfect, ETapestry, NeonOne, and Clearview. Donor retention rate represents the percent of donors that made repeat gifts to participating nonprofits from the previous year. Surveys conducted each year from 2015 to 2019 and included 10,640 non-profit organizations in 2019."
+      }
+    ]
   }
 ]
