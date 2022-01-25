@@ -86,7 +86,7 @@
         "sources": [
           {
             "source": "Giving USA",
-            "source_url": "https://givingusa.org/",
+            "source_url": "https://givingusa.org/"
           }
         ],
         "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics."
@@ -1050,11 +1050,11 @@
         "sources": [
           {
             "source": "Workplace Giving Alliance",
-            "source_url": "https://www.wg-alliance.org/research.html",
+            "source_url": "https://www.wg-alliance.org/research.html"
           },
           {
             "source": "Office of Personnel Management (OPM)",
-            "source_url": "https://www.opm.gov/combined-federal-campaign/results-impact/",
+            "source_url": "https://www.opm.gov/combined-federal-campaign/results-impact/"
           }
         ],
         "notes": "The Combined Federal Campaign (CFC) is a federal government workplace giving campaign that allows federal employees and retirees to pledge monetary support to approved charities. Summary figures are released by the Office of Personnel Management and include aggregated pledges to charities by federal employees participating in the CFC campaign."
