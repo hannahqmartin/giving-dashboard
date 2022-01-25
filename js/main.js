@@ -224,7 +224,28 @@ Promise.all([
   graphDiv.append("div")
     .attr("class", "source")
     .html(function(d){
-      return '<span>Source:</span> <a href="' + d.source_url + '" target="_blank">' + d.source + '</a>';
+      let sourceHtml = "Source: ";
+      let nSources = d.sources.length;
+      if (nSources === 1) {
+        sourceHtml += '<a href="' + d.sources[0].source_url + '" target="_blank">' + d.sources[0].source + '</a>'
+      } else if (nSources == 2) {
+        d.sources.forEach(function(s, i){
+          sourceHtml += '<a href="' + s.source_url + '" target="_blank">' + s.source + '</a>'
+          if (i === 0) {
+            sourceHtml += " and "
+          }
+        })
+      } else {
+        d.sources.forEach(function(s, i){
+          sourceHtml += '<a href="' + s.source_url + '" target="_blank">' + s.source + '</a>'
+          if (i === d.sources.length - 2) {
+            sourceHtml += ", and "
+          } else if (i < d.sources.length - 2) {
+            sourceHtml += ", "
+          }
+        })
+      }
+      return sourceHtml;
     })
 
     graphDiv.append("div")
