@@ -1223,5 +1223,102 @@
         "notes": "Estimates use anonymized and aggregated Mastercard transaction data to provide an analysis of current and historical donation trends."
       }
     ]
+  },
+  {
+    "name": "Point of Sale",
+    "description": "Charity checkout campaigns offer customers an opportunity to donate during the checkout or payment process, by rounding up, adding to their total, or having the vendor automatically make a contribution on the buyer’s behalf.",
+    "measures": [
+      {
+        "name": "Money raised by major charity checkout campaigns",
+        "data": {
+          "unit": "M",
+          "unit_string": "in millions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2012",
+              "value": "389"
+            },
+            {
+              "date": "2014",
+              "value": "422"
+            },
+            {
+              "date": "2016",
+              "value": "441"
+            },
+            {
+              "date": "2018",
+              "value": "486"
+            },
+            {
+              "date": "2020",
+              "value": "605"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "Engage for Good",
+            "source_url": "https://engageforgood.com/ccc_2021/"
+          }
+        ],
+        "notes": "Estimates are aggregated self-reported data from 76 fundraising campaigns that have raised at least $1,000,000."
+      },
+      {
+        "name": "Cumulative donations to Lyft’s Round Up and Donate program",
+        "data": {
+          "unit": "M",
+          "unit_string": "in millions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2018",
+              "value": "10"
+            },
+            {
+              "date": "2019",
+              "value": "20"
+            },
+            {
+              "date": "2020",
+              "value": "23"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "Lyft",
+            "source_url": "https://investor.lyft.com/financials-and-reports/esg/default.aspx"
+          }
+        ],
+        "notes": "Started in 2017, the Round Up and Donate program by Lyft, a rideshare company, allows passengers to donate to a cause of their choice. Estimates provided by Lyft on how much their riders have donated to Lyft’s sponsored charitable organizations since the inception of Round Up and Donate in 2017."
+      },
+      {
+        "name": "Total donated to charities from AmazonSmile",
+        "data": {
+          "unit": "M",
+          "unit_string": "in millions of dollars",
+          "date_format": "%b %Y",
+          "values": [
+            {
+              "date": "Feb 2020",
+              "value": "169"
+            },
+            {
+              "date": "Jun 2021",
+              "value": "293"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "Amazon Sustainability",
+            "source_url": "https://sustainability.aboutamazon.com/about/report-builder"
+          }
+        ],
+        "notes": "Estimates are drawn from aggregated donations made via AmazonSmile, a program where shoppers can buy goods through smile.amazon.com and choose from over one million eligible 501(c)(3) public charitable organizations for Amazon to donate 0.5 percent of eligible purchases."
+      }
+    ]
   }
 ]
