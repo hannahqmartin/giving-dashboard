@@ -1561,5 +1561,36 @@
         "notes": "Estimates of total donors are calculated by the Fundraising Effectiveness Project using anonymized giving transaction data from a variety of donor softwares, such as Bloomerang, DonorPerfect, ETapestry, NeonOne, and Clearview. Donor retention rate represents the percent of donors that made repeat gifts to participating nonprofits from the previous year. Surveys conducted each year from 2015 to 2019 and included 10,640 non-profit organizations in 2019."
       }
     ]
+  },
+  {
+    "name": "Mutual Aid",
+    "description": "Mutual aid has a long tradition and has been defined in many ways, including “any group, often unincorporated, organized with the intention of meeting the immediate needs of their fellow neighbors”.",
+    "measures": [
+      {
+        "name": "Number of donations to mutual aid networks through ioby",
+        "data": {
+          "unit": "k",
+          "unit_string": "in thousands",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2020",
+              "value": "11.410"
+            },
+            {
+              "date": "2021",
+              "value": "5.289"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "ioby",
+            "source_url": ""
+          }
+        ],
+        "notes": "Estimates are pulled from raw data provided by ioby, a crowdfunding platform. The 2020 estimate only contains data from March-December of the year, so is an incomplete comparison to 2021 but is included above to contextualize change over time. The totals do not include matched contributions made by ioby. The definition of mutual aid comes from Erin Barnes, co-founder and CEO of ioby."
+      }
+    ]
   }
 ]
