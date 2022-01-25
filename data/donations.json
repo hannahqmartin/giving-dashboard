@@ -1592,5 +1592,32 @@
         "notes": "Estimates are pulled from raw data provided by ioby, a crowdfunding platform. The 2020 estimate only contains data from March-December of the year, so is an incomplete comparison to 2021 but is included above to contextualize change over time. The totals do not include matched contributions made by ioby. The definition of mutual aid comes from Erin Barnes, co-founder and CEO of ioby."
       }
     ]
+  },
+  {
+    "name": "Collaborative giving",
+    "description": "Giving circles are groups that pool their time and money and decide communally where those resources should be donated.",
+    "measures": [
+      {
+        "name": "Total giving circles in the Global Giving Circle Directory",
+        "data": {
+          "unit": "k",
+          "unit_string": "in thousands",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2021",
+              "value": "2.459"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "Philanthropy Together Dashboard",
+            "source_url": "http://impact.philanthropytogether.org/"
+          }
+        ],
+        "notes": "Estimate pulled from Philanthropy Together’s Global Giving Circle Directory as of October 2021. The Global Giving Circle Directory provides a searchable directory of giving circles created by Philanthropy Together, a global initiative to promote giving circles."
+      }
+    ]
   }
 ]
