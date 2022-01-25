@@ -668,6 +668,45 @@
     ]
   },
   {
+    "name": "Remittance Giving",
+    "description": "Remittance giving constitutes cross-border, often recurrent person-to-person payments of relatively low value by migrants to their home countries.",
+    "measures": [
+      {
+        "name": "Remittances sent from US residents abroad",
+        "data": {
+          "unit": "B",
+          "unit_string": "in billion of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2016",
+              "value": "62.9"
+            },
+            {
+              "date": "2017",
+              "value": "64"
+            },
+            {
+              "date": "2018",
+              "value": "67"
+            },
+            {
+              "date": "2019",
+              "value": "71.6"
+            },
+            {
+              "date": "2020",
+              "value": "68"
+            }
+          ]
+        },
+        "source": "World Banck",
+        "source_url": "https://openknowledge.worldbank.org/handle/10986/33634",
+        "notes": "Estimates are drawn from Gross Domestic Product data from International Monetary Fund World Economic Outlook annually."
+      }
+    ]
+  },
+  {
     "name": "Donor-Advised Funds",
     "description": "Donor-advised funds (DAFs) are giving accounts established at public charities that allow donors to make a charitable contribution, receive an immediate tax deduction, and recommend grants over time. The public charity maintains legal control over the contributions and works with the donor who can advise on funding recommendations.",
     "measures": [
