@@ -1619,5 +1619,131 @@
         "notes": "Estimate pulled from Philanthropy Together’s Global Giving Circle Directory as of October 2021. The Global Giving Circle Directory provides a searchable directory of giving circles created by Philanthropy Together, a global initiative to promote giving circles."
       }
     ]
+  },
+  {
+    "name": "Crowdfunding",
+    "description": "Crowdfunding, which entails a large number of people each donating small amounts of money, has grown in popularity in recent years in large part because of virtual crowdfunding platforms, such as GoFundMe and DonorsChoose, and apps that have simplified monetary transactions. ",
+    "measures": [
+      {
+        "name": "Average crowdfunding gift size ",
+        "data": {
+          "unit": "",
+          "unit_string": "in dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2019",
+              "value": "189"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "IUPUI Lilly School of Philanthropy",
+            "source_url": "https://philanthropy.iupui.edu/news-events/news-item/new-study-finds-differences-between-crowdfunding-donors-and-traditional-charitable-giving-donors.html?id=354"
+          }
+        ],
+        "notes": "Estimates are drawn from a 2020 survey of 1,535 US households developed by the Lilly Family School of Philanthropy and fielded using the AmeriSpeak panel by NORC. Weights were applied in the analysis to ensure that the final sample was representative of the general U.S. households."
+      },
+      {
+        "name": "Total money raised from GoFundMe campaigns since 2010",
+        "data": {
+          "unit": "B",
+          "unit_string": "in billions of dollars",
+          "date_format": "%b %Y",
+          "values": [
+            {
+              "date": "May 2015",
+              "value": "1"
+            },
+            {
+              "date": "Dec 2016",
+              "value": "3"
+            },
+            {
+              "date": "Dec 2019",
+              "value": "9"
+            },
+            {
+              "date": "Jun 2021",
+              "value": "15"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "GoFundMe",
+            "source_url": "https://www.gofundme.com/2020"
+          }
+        ],
+        "notes": "GoFundMe allows individuals to set up crowdfunding campaigns for any purpose. Estimates are sourced from GoFundMe public reports that share estimates of money raised across all campaigns, which aggregate all donations made to crowdfunding campaigns across the platform since it was founded in 2010 (not annual estimates)."
+      },
+      {
+        "name": "Share of donations made on GoFundMe under $50",
+        "data": {
+          "unit": "%",
+          "unit_string": "in percent",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2019",
+              "value": "40"
+            },
+            {
+              "date": "2020",
+              "value": "70"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "GoFundMe’s 2019 Giving Report",
+            "source_url": "https://www.gofundme.com/2019"
+          },
+          {
+            "source": "2020 Giving Report",
+            "source_url": "https://www.gofundme.com/2020"
+          }
+        ],
+        "notes": "GoFundMe allows individuals to set up crowdfunding campaigns for any purpose. Estimates are sourced from GoFundMe public reports for 2019 and 2020, which aggregate all donations made to crowdfunding campaigns across the platform.  "
+      },
+      {
+        "name": "Total grants and contributions to DonorsChoose",
+        "data": {
+          "unit": "M",
+          "unit_string": "in millions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2015",
+              "value": "107.473914"
+            },
+            {
+              "date": "2016",
+              "value": "121.005009"
+            },
+            {
+              "date": "2017",
+              "value": "149.840171"
+            },
+            {
+              "date": "2018",
+              "value": "148.408048"
+            },
+            {
+              "date": "2019",
+              "value": "147.777790"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "DonorsChoose",
+            "source_url": "https://www.donorschoose.org/about/finance.html"
+          }
+        ],
+        "notes": "DonorsChoose allows teachers to set up crowdfunding campaigns for classroom projects. Estimates are drawn from DonorsChoose’s public tax records, isolating the contributions and grants component of their annual total revenue."
+      }
+    ]
   }
 ]
