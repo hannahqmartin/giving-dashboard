@@ -831,5 +831,196 @@
         "notes": "Estimates are sourced from a non-representative survey of 84 US community foundations. Study conducted between late 2020 and early 2021."
       }
     ]
+  },
+  {
+    "name": "Workplace Giving",
+    "description": "Americans have long donated to charity through their employers, with contributions often channeled through payroll deductions. The employer would either donate these earmarked directly to a charity like the United Way or through a campaign like the Combined Federal Campaign. But workplace giving has declined in recent decades, with new technology and norms placing more autonomy in individual employees and less in the firms or charitable intermediaries.",
+    "measures": [
+      {
+        "name": "Total value of donations made through Benevity",
+        "data": {
+          "unit": "B",
+          "unit_string": "in billions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2019",
+              "value": "1.4"
+            },
+            {
+              "date": "2020",
+              "value": "2.3"
+            }
+          ]
+        },
+        "source": "Benevity",
+        "source_url": "https://benevity.com/impactlabs",
+        "notes": "Benevity provides software that facilitates workplace giving and is used by many Fortune 500 companies. Estimates use Benevity’s master database which includes activities of more than 650 companies, including clients, users of the software and the community of causes."
+      },
+      {
+        "name": "Aggregate charitable contributions from workplace giving programs",
+        "data": {
+          "unit": "B",
+          "unit_string": "in billions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2017",
+              "value": "4"
+            }
+          ]
+        },
+        "source": "America’s Charities",
+        "source_url": "https://www.charities.org/news/america%E2%80%99s-charities-releases-groundbreaking-report-%E2%80%9Csnapshot-2017-what-us-employees-think-about",
+        "notes": "Estimates are drawn from a 2017 survey conducted by America’s Charites of 1586 employees, representing 18 industry groups (education, financial, government, healthcare, technology, nonprofit, professional services, and consumer products).This figure is the most comprehensive and recent data point to capture the scale of workplace giving."
+      },
+      {
+        "name": "Total dollars pledged by federal employees through the Combined Federal Campaign ",
+        "data": {
+          "unit": "M",
+          "unit_string": "in millions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2004",
+              "value": "256.9"
+            },
+            {
+              "date": "2005",
+              "value": "268.5"
+            },
+            {
+              "date": "2006",
+              "value": "271.6"
+            },
+            {
+              "date": "2007",
+              "value": "273.1"
+            },
+            {
+              "date": "2008",
+              "value": "275.9"
+            },
+            {
+              "date": "2009",
+              "value": "282.6"
+            },
+            {
+              "date": "2010",
+              "value": "281.5"
+            },
+            {
+              "date": "2011",
+              "value": "272.7"
+            },
+            {
+              "date": "2012",
+              "value": "258.3"
+            },
+            {
+              "date": "2013",
+              "value": "209.7"
+            },
+            {
+              "date": "2014",
+              "value": "193.2"
+            },
+            {
+              "date": "2015",
+              "value": "177.781964"
+            },
+            {
+              "date": "2016",
+              "value": "167.123057"
+            },
+            {
+              "date": "2017",
+              "value": "101.432773"
+            },
+            {
+              "date": "2018",
+              "value": "90.237954"
+            },
+            {
+              "date": "2019",
+              "value": "80.951949"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "Workplace Giving Alliance",
+            "source_url": "https://www.wg-alliance.org/research.html",
+          },
+          {
+            "source": "Office of Personnel Management (OPM)",
+            "source_url": "https://www.opm.gov/combined-federal-campaign/results-impact/",
+          }
+        ],
+        "notes": "The Combined Federal Campaign (CFC) is a federal government workplace giving campaign that allows federal employees and retirees to pledge monetary support to approved charities. Summary figures are released by the Office of Personnel Management and include aggregated pledges to charities by federal employees participating in the CFC campaign."
+      },
+      {
+        "name": "Participation rate of federal employees in the Combined Federal Campaign",
+        "data": {
+          "unit": "%",
+          "unit_string": "in percent",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2016",
+              "value": "10.68"
+            },
+            {
+              "date": "2017",
+              "value": "4.34"
+            },
+            {
+              "date": "2018",
+              "value": "3.9"
+            },
+            {
+              "date": "2019",
+              "value": "3.38"
+            }
+          ]
+        },
+        "source": "Workplace Giving Alliance",
+        "source_url": "https://www.wg-alliance.org/research.html",
+        "notes": "The Combined Federal Campaign (CFC) is a federal government workplace giving campaign that allows federal employees and retirees to pledge monetary support to approved charities. Summary figures are released by the Office of Personnel Management and include aggregated pledges to charities by federal employees participating in the CFC campaign."
+      },
+      {
+        "name": "Total corporate giving",
+        "data": {
+          "unit": "B",
+          "unit_string": "in billions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2016",
+              "value": "24.5"
+            },
+            {
+              "date": "2017",
+              "value": "20.3"
+            },
+            {
+              "date": "2018",
+              "value": "23.8"
+            },
+            {
+              "date": "2019",
+              "value": "26.0"
+            },
+            {
+              "date": "2020",
+              "value": "24.8"
+            }
+          ]
+        },
+        "source": "CECP Giving in Numbers",
+        "source_url": "https://cecp.co/home/resources/giving-in-numbers/",
+        "notes": "Estimates for aggregate total giving are based on the sum of the total investments of all companies participating in the Giving in Number survey, which asks companies to report total contributions on a fiscal year basis (end date for 12 months of data)."
+      }
+    ]
   }
 ]
