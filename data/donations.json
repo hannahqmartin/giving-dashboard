@@ -450,7 +450,7 @@
         "data": {
           "unit": "B",
           "unit_string": "in billions of dollars",
-          "date_format": "",
+          "date_format": "%Y",
           "values": [
             {
               "date": "2017",
@@ -514,7 +514,7 @@
         "data": {
           "unit": "M",
           "unit_string": "im millions",
-          "date_format": "%y",
+          "date_format": "%Y",
           "values": [
             {
               "date": "2008",
