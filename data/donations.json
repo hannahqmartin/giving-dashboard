@@ -1320,5 +1320,48 @@
         "notes": "Estimates are drawn from aggregated donations made via AmazonSmile, a program where shoppers can buy goods through smile.amazon.com and choose from over one million eligible 501(c)(3) public charitable organizations for Amazon to donate 0.5 percent of eligible purchases."
       }
     ]
+  },
+  {
+    "name": "Digital currency",
+    "description": "With the rise and increasing societal acceptance of digital currencies, such as Bitcoin, more charitable organizations are allowing digital currency donations. In recent years, some donors have made extremely large contributions involving cryptocurrency, though the exact value of the donations have fluctuated dramatically given the high volatility of many digital coins.",
+    "measures": [
+      {
+        "name": "Charitable contributions in the form of cryptocurrency to Fidelity Charitable",
+        "data": {
+          "unit": "M",
+          "unit_string": "in millions of dollars",
+          "date_format": "%Y",
+          "values": [
+            {
+              "date": "2016",
+              "value": "7"
+            },
+            {
+              "date": "2017",
+              "value": "69"
+            },
+            {
+              "date": "2018",
+              "value": "30"
+            },
+            {
+              "date": "2019",
+              "value": "13"
+            },
+            {
+              "date": "2020",
+              "value": "28"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "source": "Fidelity Charitable",
+            "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html"
+          }
+        ],
+        "notes": "Estimates are calculated using data from 153,430 giving accounts in Fidelity Charitable’s internal reporting database. Study conducted January-December 2020."
+      }
+    ]
   }
 ]
