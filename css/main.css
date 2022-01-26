@@ -365,9 +365,9 @@ body {
 }
 
 #intro {
+  max-width: 760px;
   position: relative;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 110px auto 60px auto;
 }
 
 #introText {
