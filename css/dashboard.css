@@ -150,8 +150,10 @@
 
 .title {
   font-size: 16px;
+  line-height: 21px;
   font-weight: 700;
-  color: #062635
+  color: #062635;
+  margin-bottom: 5px;
 }
 
 .unit {
@@ -167,7 +169,7 @@
    line-height: 21px;
  }
 
-.source span, .note span {
+.source, .source span, .note span {
   font-weight: 700;
 }
 

@@ -11,7 +11,8 @@ Promise.all([
   const isMobile = $(window).width() < 770;
 
   const circleRadius = 2.5,
-        labelYOffset = 10;
+        labelYOffset = 10,
+        everyNLabels = 7;
   let indicatorPadding, chartPadding;
 
   let graphWidth;
@@ -58,13 +59,16 @@ Promise.all([
         })
       d.xAxis = d3.axisBottom()
           .tickFormat(d3.timeFormat(d.data.date_format))
-          .ticks(d.data.values.length)
+          .ticks(Math.min(d.data.values.length, 5))
           .scale(d.xScale);
 
-      d.data.values.forEach(function(v){
+      let every = Math.floor(d.data.values.length / everyNLabels) + 1;
+
+      d.data.values.forEach(function(v, i){
         v.cx = d.xScale(d.parseDate(v.date));
         v.cy = d.yScale(v.value);
-        v.label = v.value + d.data.unit;
+        v.label = v.value.toFixed(d.data.significant_figures) + d.data.unit;
+        v.display = (i % every) == 0;
       });
     })
   })
@@ -121,8 +125,9 @@ Promise.all([
   const rowDivs = graphsDiv.selectAll("div")
     .data(function(d){
       return d.measures.reduce(function(result, value, index, array) {
-        if (index % 2 === 0)
+        if (index % 2 === 0) {
           result.push(array.slice(index, index + 2));
+        }
         return result;
       }, []);
     })
@@ -207,7 +212,13 @@ Promise.all([
     })
     .join("text")
       .attr("class", "label")
-      // .attr("fill", "steelblue")
+      .style("opacity", function(d){
+        if (d.display) {
+          return 1;
+        } else {
+          return 0;
+        }
+      })
       .style("text-align", "middle")
       .text(function(d){
         return d.label;
