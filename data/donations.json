@@ -9,6 +9,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2015",
@@ -56,6 +57,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2015",
@@ -97,6 +99,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2015",
@@ -138,6 +141,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2019",
@@ -159,6 +163,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2020",
@@ -186,6 +191,7 @@
           "unit": "M",
           "unit_string": "in million of dollars",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2013",
@@ -227,6 +233,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2013",
@@ -274,6 +281,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2002",
@@ -347,6 +355,7 @@
           "unit": "B",
           "unit_string": "in billion of hours",
           "date_format": "%Y",
+          "significant_figures": "2",
           "values": [
             {
               "date": "2002",
@@ -426,6 +435,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2017",
@@ -451,6 +461,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2017",
@@ -484,6 +495,7 @@
           "unit": "M",
           "unit_string": "in millions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2019",
@@ -515,6 +527,7 @@
           "unit": "M",
           "unit_string": "im millions",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2008",
@@ -560,6 +573,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2008",
@@ -605,6 +619,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2019",
@@ -630,6 +645,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "2",
           "values": [
             {
               "date": "2019",
@@ -661,6 +677,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2015",
@@ -702,6 +719,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2015",
@@ -749,6 +767,7 @@
           "unit": "B",
           "unit_string": "in billion of dollars",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2016",
@@ -792,6 +811,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2016",
@@ -826,29 +846,30 @@
       {
         "name": "Total number of DAFs in the US",
         "data": {
-          "unit": "",
-          "unit_string": "",
+          "unit": "k",
+          "unit_string": "in thousands",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2016",
-              "value": "290111"
+              "value": "290.111"
             },
             {
               "date": "2017",
-              "value": "469749"
+              "value": "469.749"
             },
             {
               "date": "2018",
-              "value": "732128"
+              "value": "732.128"
             },
             {
               "date": "2019",
-              "value": "864187"
+              "value": "864.187"
             },
             {
               "date": "2020",
-              "value": "1005099"
+              "value": "1005.099"
             }
           ]
         },
@@ -866,6 +887,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2015",
@@ -907,6 +929,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2019",
@@ -934,6 +957,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2019",
@@ -959,6 +983,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2017",
@@ -980,6 +1005,7 @@
           "unit": "M",
           "unit_string": "in millions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2004",
@@ -1065,6 +1091,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2016",
@@ -1098,6 +1125,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2016",
@@ -1141,6 +1169,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2016",
@@ -1178,6 +1207,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2016",
@@ -1203,6 +1233,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2016",
@@ -1234,6 +1265,7 @@
           "unit": "M",
           "unit_string": "in millions of dollars",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2012",
@@ -1271,6 +1303,7 @@
           "unit": "M",
           "unit_string": "in millions of dollars",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2018",
@@ -1300,6 +1333,7 @@
           "unit": "M",
           "unit_string": "in millions of dollars",
           "date_format": "%b %Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "Feb 2020",
@@ -1331,6 +1365,7 @@
           "unit": "M",
           "unit_string": "in millions of dollars",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2016",
@@ -1374,6 +1409,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2000",
@@ -1431,6 +1467,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2001",
@@ -1488,6 +1525,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2015",
@@ -1529,6 +1567,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2016",
@@ -1572,6 +1611,7 @@
           "unit": "k",
           "unit_string": "in thousands",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2020",
@@ -1603,6 +1643,7 @@
           "unit": "k",
           "unit_string": "in thousands",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2021",
@@ -1630,6 +1671,7 @@
           "unit": "",
           "unit_string": "in dollars",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2019",
@@ -1651,6 +1693,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%b %Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "May 2015",
@@ -1684,6 +1727,7 @@
           "unit": "%",
           "unit_string": "in percent",
           "date_format": "%Y",
+          "significant_figures": "0",
           "values": [
             {
               "date": "2019",
@@ -1713,6 +1757,7 @@
           "unit": "M",
           "unit_string": "in millions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2015",
@@ -1756,6 +1801,7 @@
           "unit": "B",
           "unit_string": "in billions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2019",
@@ -1785,6 +1831,7 @@
           "unit": "M",
           "unit_string": "in millions of dollars",
           "date_format": "%Y",
+          "significant_figures": "1",
           "values": [
             {
               "date": "2017",
