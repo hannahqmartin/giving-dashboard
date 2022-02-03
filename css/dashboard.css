@@ -5,7 +5,7 @@
 }
 
 #container {
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto;
   padding-bottom: 0px;
 }
@@ -20,7 +20,7 @@
 .indicator {
   /* margin: 0px 15px;
   padding: 15px 0px; */
-  border-bottom: 1px solid darkgray;
+  border-bottom: 1.5px solid #e8eef1;
   border-spacing: 15px;
 }
 
@@ -42,10 +42,16 @@
 }
 
 .summary {
+  width: 90%;
   position: relative;
   cursor: pointer;
   margin: 15px 0px;
   font-size: 16px;
+}
+
+.summary .summary-name, .summary .summary-measures {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .summary::after {
@@ -54,7 +60,7 @@
   width: 100%;
   height: 200%;
   top: -50%;
-  right: 0;
+  right: -10%;
   /* z-index: -1; */
   background-image: url("../img/icon-chevron-down.svg");
   background-repeat: no-repeat;
@@ -69,7 +75,7 @@
   width: 100%;
   height: 200%;
   top: -50%;
-  left: calc(100% - 40px);
+  left: calc(110% - 40px);
   /* z-index: -1; */
   background-image: url("../img/icon-chevron-down.svg");
   background-repeat: no-repeat;
@@ -180,7 +186,23 @@
 
 @media (max-width: 770px) {
 
+  #container-background {
+    padding: 40px 0;
+  }
+
   #container {
     margin: 0 16px;
+  }
+
+  .description {
+    padding: 10px 15px;
+  }
+
+  .row {
+    margin-bottom: 0px;
+  }
+
+  .graph {
+    margin-bottom: 20px;
   }
 }

@@ -11,14 +11,22 @@ Promise.all([
   const isMobile = $(window).width() < 770;
 
   const circleRadius = 2.5,
-        labelYOffset = 10,
-        everyNLabels = 7;
+        labelYOffset = 10;
+
+  let everyNLabels, nTicks;
+  if (isMobile) {
+    everyNLabels = 5;
+    nTicks = 4;
+  } else {
+    everyNLabels = 7;
+    nTicks = 5;
+  }
   let indicatorPadding, chartPadding;
 
   let graphWidth;
   if (isMobile) {
     indicatorPadding = 10;
-    chartPadding = 10;
+    chartPadding = 5;
     graphWidth = ($("#container").width() - 2 * indicatorPadding - 2 * chartPadding - 40);
   } else {
     indicatorPadding = 15;
@@ -26,10 +34,15 @@ Promise.all([
     graphWidth = ($("#container").width() - 2 * indicatorPadding - 4 * chartPadding - 40) / 2;
   }
 
-  let heightl
-  const margin = {top: 20, right: 30, bottom: 20, left: 30},
-    width = graphWidth - margin.left - margin.right,
-    height = graphWidth * 4.5 / 10 - margin.top - margin.bottom;
+  let margin;
+  if (isMobile) {
+    margin  = {top: 20, right: 20, bottom: 20, left: 20};
+  } else {
+    margin  = {top: 20, right: 30, bottom: 20, left: 30};
+  }
+
+  const width = graphWidth - margin.left - margin.right,
+        height = graphWidth * 4.5 / 10 - margin.top - margin.bottom;
 
   donations.forEach(function(n){
     n.measures.forEach(function(d){
@@ -59,7 +72,7 @@ Promise.all([
         })
       d.xAxis = d3.axisBottom()
           .tickFormat(d3.timeFormat(d.data.date_format))
-          .ticks(Math.min(d.data.values.length, 5))
+          .ticks(Math.min(d.data.values.length, nTicks))
           .scale(d.xScale);
 
       let every = Math.floor(d.data.values.length / everyNLabels) + 1;
