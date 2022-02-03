@@ -158,7 +158,7 @@
         "notes": "Estimates are calculated by WealthX’s Philanthropic Giving Model, which analyzes the annual philanthropic donations made by ultra-wealthy individuals in each market (those with a net worth of more than $30 million). WealthX then uses its proprietary Wealth and Investable Assets Model to estimate total philanthropic giving (as a proportion of total wealth) in each region. These figures exclude giving by corporations as well as businesses owned by the ultra-wealthy."
       },
       {
-        "name": "Share of charitable donations lessthan $5,001",
+        "name": "Share of charitable donations less than $5,001",
         "data": {
           "unit": "%",
           "unit_string": "in percent",
