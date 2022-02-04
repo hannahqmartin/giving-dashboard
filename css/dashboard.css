@@ -93,6 +93,7 @@
 .trends {
   display: inline-block;
   float: right;
+  transform: translateY(-5px);
 }
 
 .last-value, .last-date, .change {
@@ -115,7 +116,7 @@
 .change {
   /* border: 1px solid #b5c9d2; */
   border-radius: 5px;
-  width: 75px;
+  width: 80px;
   padding: 5px 5px;
   color: #FFFFFF;
   background-color: #c4c4c4;
@@ -271,6 +272,41 @@
 
   #container {
     margin: 0 16px;
+  }
+
+  .summary {
+    margin: 10px 0;
+  }
+
+  .summary-name {
+    display: block;
+  }
+
+  .summary-measure {
+    margin-top: 5px;
+  }
+
+  .trends {
+    margin-top: 5px;
+    float: right;
+    display: inline-block;
+    transform: translateY(-7px);
+  }
+
+  .last-value, .last-date {
+    display: none;
+  }
+
+  .change {
+    font-size: 14px;
+    line-height: 18px;
+    width: 65px;
+    padding: 3px;
+  }
+
+  .change.positive::before, .change.negative::before {
+    background-position-y: 0;
+    background-position-x: calc(100% - 50px);
   }
 
   .description {
