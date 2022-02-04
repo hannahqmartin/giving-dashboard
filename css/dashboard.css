@@ -42,7 +42,7 @@
 }
 
 .summary {
-  width: 90%;
+  width: calc(100% - 50px);
   position: relative;
   cursor: pointer;
   margin: 15px 0px;
@@ -60,11 +60,11 @@
   width: 100%;
   height: 200%;
   top: -50%;
-  right: -10%;
+  right: -40px;
   /* z-index: -1; */
   background-image: url("../img/icon-chevron-down.svg");
   background-repeat: no-repeat;
-  background-position-x: calc(100% - 12px);
+  background-position-x: 100%;
   background-position-y: 50%;
   background-size: 16px;
 }
@@ -75,11 +75,11 @@
   width: 100%;
   height: 200%;
   top: -50%;
-  left: calc(110% - 40px);
+  left: calc(100% + 25px);
   /* z-index: -1; */
   background-image: url("../img/icon-chevron-down.svg");
   background-repeat: no-repeat;
-  background-position-x: calc(100% - 12px);
+  background-position-x: 100%;
   background-position-y: 50%;
   background-size: 16px;
 
@@ -104,12 +104,12 @@
 
 .last-value {
   width: 50px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .last-date {
   width: 40px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .change {
@@ -126,7 +126,7 @@
 }
 
 .change.empty {
-  padding: 0;
+  padding: 0 5px;
 }
 
 .change.positive {
