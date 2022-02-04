@@ -107,7 +107,38 @@ Promise.all([
       } else {
         textMeasures = "measures";
       }
-      return '<span class="summary-name">' + d.name + '</span><span class="summary-measures">' + d.measures.length + " " + textMeasures + '</span>';
+      let lastNumberLabel, lastDateLabel, lastChangeLabel, lastChangeClass;
+      let thisData = d.measures[0].data.values;
+      let lastNumber = thisData[thisData.length - 1].value;
+      lastNumberLabel = lastNumber.toFixed(d.measures[0].data.significant_figures) + d.measures[0].data.unit;
+      let lastDate = thisData[thisData.length - 1].date;
+      lastDateLabel = lastDate + '';
+      let lastChange = NaN;
+      if (thisData.length > 1) {
+        secondToLastNumber = thisData[thisData.length - 2].value;
+        lastChange = ((lastNumber - secondToLastNumber) / secondToLastNumber * 100).toFixed(1);
+      }
+
+      console.log(lastChange, )
+      if (isNaN(lastChange)) {
+        lastChangeLabel = '';
+        lastChangeClass = 'empty';
+      } else if (lastChange < 0){
+        lastChangeLabel = -lastChange + "%";
+        lastChangeClass = 'negative';
+        imageHtml = '';
+      } else {
+        lastChangeLabel = lastChange + "%";
+        lastChangeClass = 'positive';
+      }
+
+      return '<span class="summary-name">' + d.name + '</span>' +
+            '<span class="summary-measures">' + d.measures.length + " " + textMeasures + '</span>' +
+            '<div class="trends">' +
+            '<div class="last-value">' + lastNumberLabel + '</div>' +
+            '<div class="last-date">' + lastDateLabel + '</div>' +
+            '<div class="change ' + lastChangeClass + '">' + lastChangeLabel + '</div>' +
+            '</div>';
     })
     .on("click", function(event, d){
       let summary = d3.select(this);
