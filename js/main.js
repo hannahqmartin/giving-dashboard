@@ -36,9 +36,9 @@ Promise.all([
 
   let margin;
   if (isMobile) {
-    margin  = {top: 20, right: 30, bottom: 20, left: 30};
+    margin  = {top: 20, right: 30, bottom: 20, left: 50};
   } else {
-    margin  = {top: 20, right: 30, bottom: 20, left: 30};
+    margin  = {top: 10, right: 20, bottom: 10, left: 50};
   }
 
   const width = graphWidth - margin.left - margin.right,
@@ -60,8 +60,8 @@ Promise.all([
         .range([0, width])
         .domain(xExtent)
       d.yScale = d3.scaleLinear()
-        .range([height - margin.bottom, margin.top])
-        .domain(yExtent)
+        .range([height, margin.top])
+        .domain([0.98 * yExtent[0], 1.02 * yExtent[1]])
       d.line = line = d3.line()
         // .curve(d3.curveMonotoneX)
         .x(function(v){
@@ -74,6 +74,10 @@ Promise.all([
           .tickFormat(d3.timeFormat(d.data.date_format))
           .ticks(Math.min(d.data.values.length, nTicks))
           .scale(d.xScale);
+      d.yAxis = d3.axisLeft()
+          .tickFormat(t => t + d.data.unit)
+          .ticks(nTicks)
+          .scale(d.yScale);
 
       let every = Math.floor(d.data.values.length / everyNLabels) + 1;
 
@@ -227,13 +231,20 @@ Promise.all([
 
   g.append("g")
     .attr("class", "x axis")
-    .attr("transform", "translate(0," + (margin.top + height - margin.bottom) + ")")
+    .attr("transform", "translate(0," + height + ")")
     .each(function(d, i){
       d3.select(this).call(d.xAxis);
     });
 
-  g.selectAll(".tick line")
-    .remove()
+  g.append("g")
+    .attr("class", "y axis")
+    .attr("transform", "translate(0,0)")
+    .each(function(d, i){
+      d3.select(this).call(d.yAxis);
+    });
+
+  // g.selectAll(".tick line")
+  //   .remove()
 
   g.append("path")
     .attr("fill", "none")
@@ -262,31 +273,30 @@ Promise.all([
       })
       .attr("r", circleRadius)
 
-  g.selectAll(".label")
-    .data(function(d){
-      return d.data.values;
-    })
-    .join("text")
-      .attr("class", "label")
-      .style("opacity", function(d){
-        if (d.display) {
-          return 1;
-        } else {
-          return 0;
-        }
-      })
-      .style("text-align", "middle")
-      .text(function(d){
-        return d.label;
-      })
-      .attr("x", function(d){
-        let rect = d3.select(this).node().getBoundingClientRect();
-        return d.cx - rect.width / 2;
-      })
-      .attr("y", function(d){
-        return d.cy - labelYOffset;
-      })
-      // .attr("r", circleRadius)
+  // g.selectAll(".label")
+  //   .data(function(d){
+  //     return d.data.values;
+  //   })
+  //   .join("text")
+  //     .attr("class", "label")
+  //     .style("opacity", function(d){
+  //       if (d.display) {
+  //         return 1;
+  //       } else {
+  //         return 0;
+  //       }
+  //     })
+  //     .style("text-align", "middle")
+  //     .text(function(d){
+  //       return d.label;
+  //     })
+  //     .attr("x", function(d){
+  //       let rect = d3.select(this).node().getBoundingClientRect();
+  //       return d.cx - rect.width / 2;
+  //     })
+  //     .attr("y", function(d){
+  //       return d.cy - labelYOffset;
+  //     })
 
   graphDiv.append("div")
     .attr("class", "source")
