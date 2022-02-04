@@ -7,7 +7,8 @@
         "name": "Total charitable contributions",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -55,7 +56,8 @@
         "name": "Share of total charitable contributions made by individuals",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -97,7 +99,8 @@
         "name": "Total charitable contributions made by individuals",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -139,7 +142,8 @@
         "name": "Share of charitable contributions made by ultra-wealthy individuals",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -161,7 +165,8 @@
         "name": "Share of charitable donations less than $5,001",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -189,7 +194,8 @@
         "name": "Total annual value of noncash charitable contributions",
         "data": {
           "unit": "M",
-          "unit_string": "in million of dollars",
+          "unit_string": "In millions of dollars ($)",
+          "trend_label": "million",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -231,7 +237,8 @@
         "name": "Share of non-cash assets among all itemized charitable contributions",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -279,7 +286,8 @@
         "name": "Share of Americans who volunteer",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -353,7 +361,8 @@
         "name": "Total hours volunteered",
         "data": {
           "unit": "B",
-          "unit_string": "in billion of hours",
+          "unit_string": "Billions of hours",
+          "trend_label": "hours",
           "date_format": "%Y",
           "significant_figures": "2",
           "values": [
@@ -433,7 +442,8 @@
         "name": "Share of affluent households who participate in impact investing",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -459,7 +469,8 @@
         "name": "Total DAF assets in impact investment pools at Fidelity Charitable",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -493,7 +504,8 @@
         "name": "Total amount of recoverable grantsby Fidelity Charitable DAFs to charities",
         "data": {
           "unit": "M",
-          "unit_string": "in millions of dollars",
+          "unit_string": "In millions of dollars ($)",
+          "trend_label": "million",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -525,7 +537,8 @@
         "name": "Total donors that gave over $200 to a political campaign",
         "data": {
           "unit": "M",
-          "unit_string": "im millions",
+          "unit_string": "",
+          "trend_label": "million donors",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -571,7 +584,8 @@
         "name": "Total money contributed to political campaigns from donations over $200",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -617,7 +631,8 @@
         "name": "Money donated to WinRed",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -643,7 +658,8 @@
         "name": "Money donated to ActBlue",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "2",
           "values": [
@@ -675,7 +691,8 @@
         "name": "Total giving by bequest",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -717,7 +734,8 @@
         "name": "Share of total charitable contributions given through bequest",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -765,7 +783,8 @@
         "name": "Remittances sent from US residents abroad",
         "data": {
           "unit": "B",
-          "unit_string": "in billion of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -809,7 +828,8 @@
         "name": "Total value of contributions made to donor-advised funds",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -846,8 +866,9 @@
       {
         "name": "Total number of DAFs in the US",
         "data": {
-          "unit": "k",
-          "unit_string": "in thousands",
+          "unit": "K",
+          "unit_string": "",
+          "trend_label": "DAFs",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -885,7 +906,8 @@
         "name": "Share of DAF contributions made as noncash assets at Fidelity Charitable",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -927,7 +949,8 @@
         "name": "Total dollars contributed to DAFs at community foundations",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -955,7 +978,8 @@
         "name": "Total value of donations made through Benevity",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -981,7 +1005,8 @@
         "name": "Aggregate charitable contributions from workplace giving programs",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -1003,7 +1028,8 @@
         "name": "Total dollars pledged by federal employees through the Combined Federal Campaign ",
         "data": {
           "unit": "M",
-          "unit_string": "in millions of dollars",
+          "unit_string": "In millions of dollars ($)",
+          "trend_label": "million",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -1089,7 +1115,8 @@
         "name": "Participation rate of federal employees in the Combined Federal Campaign",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -1123,7 +1150,8 @@
         "name": "Total corporate giving",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -1167,7 +1195,8 @@
         "name": "Share of all donations, excluding grants, made online",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -1205,7 +1234,8 @@
         "name": "Percent change in number of online donations ",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -1231,7 +1261,8 @@
         "name": "Percent change in individual donations made through electronic payment",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -1263,7 +1294,8 @@
         "name": "Money raised by major charity checkout campaigns",
         "data": {
           "unit": "M",
-          "unit_string": "in millions of dollars",
+          "unit_string": "In millions of dollars ($)",
+          "trend_label": "million",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -1301,7 +1333,8 @@
         "name": "Cumulative donations to Lyft’s Round Up and Donate program",
         "data": {
           "unit": "M",
-          "unit_string": "in millions of dollars",
+          "unit_string": "In millions of dollars ($)",
+          "trend_label": "million",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -1331,7 +1364,8 @@
         "name": "Total donated to charities from AmazonSmile",
         "data": {
           "unit": "M",
-          "unit_string": "in millions of dollars",
+          "unit_string": "In millions of dollars ($)",
+          "trend_label": "million",
           "date_format": "%b %Y",
           "significant_figures": "0",
           "values": [
@@ -1363,7 +1397,8 @@
         "name": "Charitable contributions in the form of cryptocurrency to Fidelity Charitable",
         "data": {
           "unit": "M",
-          "unit_string": "in millions of dollars",
+          "unit_string": "In millions of dollars ($)",
+          "trend_label": "million",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -1407,7 +1442,8 @@
         "name": "Share of US households who report donating money to one or more charitable organization in the last year",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -1465,7 +1501,8 @@
         "name": "Share of Americans who report donating money to a charitable organization in the last year",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -1523,7 +1560,8 @@
         "name": "Percent change in total number of donors from previous year ",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -1565,7 +1603,8 @@
         "name": "Donor retention rate",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -1608,8 +1647,9 @@
       {
         "name": "Number of donations to mutual aid networks through ioby",
         "data": {
-          "unit": "k",
-          "unit_string": "in thousands",
+          "unit": "K",
+          "unit_string": "",
+          "trend_label": "networks",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -1640,8 +1680,9 @@
       {
         "name": "Total giving circles in the Global Giving Circle Directory",
         "data": {
-          "unit": "k",
-          "unit_string": "in thousands",
+          "unit": "K",
+          "unit_string": "",
+          "trend_label": "circles",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -1666,10 +1707,11 @@
     "description": "Crowdfunding, which entails a large number of people each donating small amounts of money, has grown in popularity in recent years in large part because of virtual crowdfunding platforms, such as GoFundMe and DonorsChoose, and apps that have simplified monetary transactions. ",
     "measures": [
       {
-        "name": "Average crowdfunding gift size ",
+        "name": "Average crowdfunding gift size",
         "data": {
           "unit": "",
-          "unit_string": "in dollars",
+          "unit_string": "In dollars ($)",
+          "trend_label": "",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -1691,7 +1733,8 @@
         "name": "Total money raised from GoFundMe campaigns since 2010",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%b %Y",
           "significant_figures": "0",
           "values": [
@@ -1725,7 +1768,8 @@
         "name": "Share of donations made on GoFundMe under $50",
         "data": {
           "unit": "%",
-          "unit_string": "in percent",
+          "unit_string": "",
+          "trend_label": "percent",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
@@ -1755,7 +1799,8 @@
         "name": "Total grants and contributions to DonorsChoose",
         "data": {
           "unit": "M",
-          "unit_string": "in millions of dollars",
+          "unit_string": "In millions of dollars ($)",
+          "trend_label": "million",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -1799,7 +1844,8 @@
         "name": "Total dollars donated in the US on GivingTuesday ",
         "data": {
           "unit": "B",
-          "unit_string": "in billions of dollars",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [
@@ -1829,7 +1875,8 @@
         "name": "Total US online donations made on GivingTuesday ",
         "data": {
           "unit": "M",
-          "unit_string": "in millions of dollars",
+          "unit_string": "In millions of dollars ($)",
+          "trend_label": "million",
           "date_format": "%Y",
           "significant_figures": "1",
           "values": [

@@ -107,25 +107,17 @@ Promise.all([
       } else {
         textMeasures = "measures";
       }
-      let lastNumberLabel, lastNumberPrefix, lastNumberSufix, lastDateLabel, lastChangeLabel, lastChangeClass;
+      let lastNumberLabel, lastNumberPrefix, lastDateLabel, lastChangeLabel, lastChangeClass;
       let thisData = d.measures[0].data.values;
+      let lastNumberSufix = ' ' + d.measures[0].data.trend_label;
       let lastNumber = thisData[thisData.length - 1].value;
-      if (d.measures[0].data.unit == 'k') {
-        lastNumberSufix = '';
-      } else if (d.measures[0].data.unit == 'M') {
-        lastNumberSufix = ' millions';
-      } else if (d.measures[0].data.unit == 'B') {
-        lastNumberSufix = ' billions';
-      } else {
-        lastNumberSufix = d.measures[0].data.unit;
-      }
 
-      if (d.measures[0].data.unit_string.endsWith('dollars')) {
+      if (d.measures[0].data.unit_string.endsWith('($)')) {
         lastNumberPrefix = '$';
       } else {
         lastNumberPrefix = '';
       }
-      if (d.measures[0].data.unit == 'k') {
+      if (d.measures[0].data.unit == 'K') {
         lastNumberLabel = lastNumberPrefix + lastNumber * 1000 + lastNumberSufix;
       } else {
         lastNumberLabel = lastNumberPrefix + lastNumber.toFixed(d.measures[0].data.significant_figures) + lastNumberSufix;
