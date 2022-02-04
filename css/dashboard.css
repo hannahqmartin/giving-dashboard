@@ -260,6 +260,7 @@
 }
 
 .source {
+  margin-top: 4px;
   margin-bottom: 4px;
 }
 
@@ -300,13 +301,13 @@
   .change {
     font-size: 14px;
     line-height: 18px;
-    width: 65px;
-    padding: 3px;
+    width: 70px;
+    padding: 4px;
   }
 
   .change.positive::before, .change.negative::before {
     background-position-y: 0;
-    background-position-x: calc(100% - 50px);
+    background-position-x: calc(100% - 55px);
   }
 
   .description {
