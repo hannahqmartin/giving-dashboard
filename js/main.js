@@ -27,7 +27,7 @@ Promise.all([
   if (isMobile) {
     indicatorPadding = 10;
     chartPadding = 5;
-    graphWidth = ($("#container").width() - 2 * indicatorPadding - 2 * chartPadding - 40);
+    graphWidth = ($("#container").width() - 2 * indicatorPadding - 2 * chartPadding - 25);
   } else {
     indicatorPadding = 15;
     chartPadding = 15;
@@ -36,7 +36,7 @@ Promise.all([
 
   let margin;
   if (isMobile) {
-    margin  = {top: 20, right: 20, bottom: 20, left: 20};
+    margin  = {top: 20, right: 30, bottom: 20, left: 30};
   } else {
     margin  = {top: 20, right: 30, bottom: 20, left: 30};
   }
