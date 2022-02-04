@@ -107,10 +107,29 @@ Promise.all([
       } else {
         textMeasures = "measures";
       }
-      let lastNumberLabel, lastDateLabel, lastChangeLabel, lastChangeClass;
+      let lastNumberLabel, lastNumberPrefix, lastNumberSufix, lastDateLabel, lastChangeLabel, lastChangeClass;
       let thisData = d.measures[0].data.values;
       let lastNumber = thisData[thisData.length - 1].value;
-      lastNumberLabel = lastNumber.toFixed(d.measures[0].data.significant_figures) + d.measures[0].data.unit;
+      if (d.measures[0].data.unit == 'k') {
+        lastNumberSufix = '';
+      } else if (d.measures[0].data.unit == 'M') {
+        lastNumberSufix = ' millions';
+      } else if (d.measures[0].data.unit == 'B') {
+        lastNumberSufix = ' billions';
+      } else {
+        lastNumberSufix = d.measures[0].data.unit;
+      }
+
+      if (d.measures[0].data.unit_string.endsWith('dollars')) {
+        lastNumberPrefix = '$';
+      } else {
+        lastNumberPrefix = '';
+      }
+      if (d.measures[0].data.unit == 'k') {
+        lastNumberLabel = lastNumberPrefix + lastNumber * 1000 + lastNumberSufix;
+      } else {
+        lastNumberLabel = lastNumberPrefix + lastNumber.toFixed(d.measures[0].data.significant_figures) + lastNumberSufix;
+      }
       let lastDate = thisData[thisData.length - 1].date;
       lastDateLabel = lastDate + '';
       let lastChange = NaN;
@@ -119,7 +138,6 @@ Promise.all([
         lastChange = ((lastNumber - secondToLastNumber) / secondToLastNumber * 100).toFixed(1);
       }
 
-      console.log(lastChange, )
       if (isNaN(lastChange)) {
         lastChangeLabel = '';
         lastChangeClass = 'empty';
