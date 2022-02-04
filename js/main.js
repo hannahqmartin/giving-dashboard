@@ -123,10 +123,12 @@ Promise.all([
       if (isNaN(lastChange)) {
         lastChangeLabel = '';
         lastChangeClass = 'empty';
+      } else if (lastChange === 0){
+        lastChangeLabel = lastChange + "%";
+        lastChangeClass = 'neutral';
       } else if (lastChange < 0){
         lastChangeLabel = -lastChange + "%";
         lastChangeClass = 'negative';
-        imageHtml = '';
       } else {
         lastChangeLabel = lastChange + "%";
         lastChangeClass = 'positive';
