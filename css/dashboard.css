@@ -281,6 +281,7 @@
 
   .summary-name {
     display: block;
+    margin-bottom: 4px;
   }
 
   .summary-measure {
