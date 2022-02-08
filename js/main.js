@@ -71,8 +71,14 @@ Promise.all([
           return d.yScale(v.value)
         })
       d.xAxis = d3.axisBottom()
-          .tickFormat(d3.timeFormat(d.data.date_format))
-          .ticks(Math.min(d.data.values.length, nTicks))
+          .tickFormat(function (t, i){
+            if ((i % every) == 0) {
+              return d3.timeFormat(d.data.date_format)(t);
+            } else {
+              return '';
+            }
+          })
+          .ticks(d.data.values.length)
           .scale(d.xScale);
 
       let every = Math.floor(d.data.values.length / everyNLabels) + 1;
@@ -232,8 +238,8 @@ Promise.all([
       d3.select(this).call(d.xAxis);
     });
 
-  g.selectAll(".tick line")
-    .remove()
+  // g.selectAll(".tick line")
+  //   .remove()
 
   g.append("path")
     .attr("fill", "none")
