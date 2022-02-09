@@ -131,7 +131,7 @@
 }
 
 .change.positive {
-  color: #55b748;
+  color: #408941;
   background-color: #ddf1da;
 }
 
@@ -151,7 +151,7 @@
 }
 
 .change.negative {
-  color: #db2b27;
+  color: #a4201d;
   background-color: #f4bfbe;
 }
 
@@ -197,7 +197,7 @@
 
 .description {
   font-style: italic;
-  color: #6c838e;
+  color: #4A5F68;
   font-size: 16px;
   line-height: 24px;
   background-color: #e8f4fa;
