@@ -185,7 +185,7 @@
 } */
 
 .summary .summary-name {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700;
   margin-right: 10px;
   color: #062635;
