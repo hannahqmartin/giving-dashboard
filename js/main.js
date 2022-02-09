@@ -19,7 +19,7 @@ Promise.all([
     nTicks = 4;
   } else {
     everyNLabels = 7;
-    nTicks = 5;
+    nTicks = 4;
   }
   let indicatorPadding, chartPadding;
 
@@ -61,7 +61,7 @@ Promise.all([
         .domain(xExtent)
       d.yScale = d3.scaleLinear()
         .range([height, margin.top])
-        .domain([0.98 * yExtent[0], 1.02 * yExtent[1]])
+        .domain([0.95 * yExtent[0], 1.05 * yExtent[1]])
       d.line = line = d3.line()
         // .curve(d3.curveMonotoneX)
         .x(function(v){
@@ -236,17 +236,24 @@ Promise.all([
   //   });
 
   g.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")")
+    .attr("class", "y-axis")
+    .attr("transform", "translate(0,0)")
     .each(function(d, i){
-      d3.select(this).call(d.xAxis);
+      let thisG = d3.select(this);
+      thisG.call(d.yAxis);
+      thisG.selectAll(".tick line")
+        .attr("x2", width);
+      thisG.selectAll(".domain").remove();
+      thisG.selectAll("text")
+        // .attr("dy", -5)
+        // .attr("x", 2*margin.left);
     });
 
   g.append("g")
-    .attr("class", "y axis")
-    .attr("transform", "translate(0,0)")
+    .attr("class", "x-axis")
+    .attr("transform", "translate(0," + height + ")")
     .each(function(d, i){
-      d3.select(this).call(d.yAxis);
+      d3.select(this).call(d.xAxis);
     });
 
   // g.selectAll(".tick line")
