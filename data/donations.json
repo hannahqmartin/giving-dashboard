@@ -1,7 +1,7 @@
 [
   {
-    "name": "Total Charitable Giving",
-    "description": "Charitable giving can occur through many different avenues for generosity. Here, we use one measure of aggregate charitable giving, which includes contributions from individuals, corporations, bequests, and foundations.",
+    "name": "Total charitable giving",
+    "description": "Perhaps the most frequently invoked statistic related to giving is one that seeks to measure aggregate charitable giving, combining donations from individuals (living donors and bequests) and institutions (corporations and foundations) to 501(c)3 organizations.",
     "measures": [
       {
         "name": "Total charitable contributions",
@@ -44,13 +44,13 @@
             "source_url": "https://givingusa.org/"
           }
         ],
-        "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulations of tax data, economic indicators, and demographics."
+        "notes": "Estimates rely on econometric methods developed by the Indiana University Lilly Family School of Philanthropy and tabulation of tax data, economic indicators, and demographics."
       }
     ]
   },
   {
     "name": "Individual giving",
-    "description": "Individuals, as opposed to institutions, have long represented the largest source of charitable giving in the United States. Giving by the ultra-wealthy continues to represent a disproportionately large share of giving by individuals.",
+    "description": "Individuals, as opposed to institutions, have long represented the largest source of charitable giving in the United States. Giving by the very wealthy continues to represent a disproportionately large share of giving by individuals.",
     "measures": [
       {
         "name": "Share of total charitable contributions made by individuals",
@@ -93,7 +93,7 @@
             "source_url": "https://givingusa.org/"
           }
         ],
-        "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics."
+        "notes": "Estimates rely on econometric methods developed by the Indiana University Lilly Family School of Philanthropy and tabulation of tax data, economic indicators, and demographics."
       },
       {
         "name": "Total charitable contributions made by individuals",
@@ -136,20 +136,20 @@
             "source_url": "https://givingusa.org/"
           }
         ],
-        "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics."
+        "notes": "Estimates rely on econometric methods developed by the Indiana University Lilly Family School of Philanthropy and tabulation of tax data, economic indicators, and demographics."
       },
       {
-        "name": "Share of charitable contributions made by ultra-wealthy individuals",
+        "name": "Total donations made by ultra-wealthy individuals in the United States",
         "data": {
-          "unit": "%",
-          "unit_string": "",
-          "trend_label": "percent",
+          "unit": "B",
+          "unit_string": "In billions of dollars ($)",
+          "trend_label": "billion",
           "date_format": "%Y",
           "significant_figures": "0",
           "values": [
             {
-              "date": "2019",
-              "value": "20"
+              "date": "2020",
+              "value": "85"
             }
           ]
         },
@@ -159,7 +159,7 @@
             "source_url": "https://www.wealthx.com/insights-resources/reports/"
           }
         ],
-        "notes": "Estimates are calculated by WealthX’s Philanthropic Giving Model, which analyzes the annual philanthropic donations made by ultra-wealthy individuals in each market (those with a net worth of more than $30 million). WealthX then uses its proprietary Wealth and Investable Assets Model to estimate total philanthropic giving (as a proportion of total wealth) in each region. These figures exclude giving by corporations as well as businesses owned by the ultra-wealthy."
+        "notes": "Estimates are calculated by Wealth-X’s Philanthropic Giving Model, which analyzes the annual philanthropic donations made by the ultra-wealthy defined as those with a net worth of more than $30 million) in each market. Wealth-X then uses its proprietary Wealth and Investable Assets Model to estimate total philanthropic giving (as a proportion of total wealth) in each region. These figures exclude giving by corporations as well as businesses owned by the ultra-high-net-worth."
       },
       {
         "name": "Share of charitable donations less than $5,001",
@@ -182,13 +182,13 @@
             "source_url": "https://www.givingtuesday.org/insights/giving-lab/?co-item=giving-in-unprecedented-times-609a01a64ec3825b6b24bd26"
           }
         ],
-        "notes": "Estimates are based on GivingTuesday’s Growth in Giving dataset, which is a longitudinal database of donation transactions by individuals in the US aggregated from many sources (including customer relationship management databases and other giving platforms). Transactions included in this database are limited to those made to 501(c)3s with no more than $25M in contributions and with data from three consecutive years."
+        "notes": "Estimates are based on GivingTuesday’s Growth in Giving dataset, a longitudinal dataset of donation transactions by individuals in the United States aggregated from many sources (including customer relationship management databases and other giving platforms). Transactions included in this dataset are limited to those made to 501(c)(3)s with no more than $25M in contributions and with data from three consecutive years."
       }
     ]
   },
   {
-    "name": "Noncash Charitable Contributions",
-    "description": "Not all giving comes in the form of cash. Many organizations accept non-cash assets, including publicly traded securities (stocks, bonds and mutual funds) and non-publicly traded assets (private stock, restricted stock, and limited partnership interests). These contributions can be itemized on taxpayers’ yearly tax returns.",
+    "name": "Noncash charitable contributions",
+    "description": "Not all giving comes in the form of cash. Many organizations accept noncash assets, including publicly traded securities (stocks, bonds, and mutual funds) and non–publicly traded assets (private stock, restricted stock, and limited partnership interests). These contributions can be itemized on taxpayers’ yearly tax returns.",
     "measures": [
       {
         "name": "Total annual value of noncash charitable contributions",
@@ -231,10 +231,10 @@
             "source_url": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-returns-complete-report-publication-1304#_IndReturns"
           }
         ],
-        "notes": "Noncash (or “other than cash”) charitable contributions are calculated by the IRS Statistics of Income Division, aggregating data from itemized individual tax returns."
+        "notes": "The IRS Statistics of Income Division calculates noncash (or “other than cash”) charitable contributions by aggregating data from itemized individual tax returns."
       },
       {
-        "name": "Share of non-cash assets among all itemized charitable contributions",
+        "name": "Share of noncash assets among all itemized charitable contributions",
         "data": {
           "unit": "%",
           "unit_string": "",
@@ -274,13 +274,13 @@
             "source_url": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-returns-complete-report-publication-1304#_IndReturns"
           }
         ],
-        "notes": "Noncash (or “other than cash”) charitable contributions are calculated by the IRS Statistics of Income Division, aggregating data from itemized individual tax returns."
+        "notes": "The IRS Statistics of Income Division calculates noncash (or “other than cash”) charitable contributions by aggregating data from itemized individual tax returns."
       }
     ]
   },
   {
     "name": "Volunteering",
-    "description": "Volunteering is a core component of how individuals express generosity. Much of the data on volunteering registers how individuals help tax-exempt nonprofit institutions, but volunteers can also assist informal organizations and association.",
+    "description": "Volunteering is a core way individuals express generosity. Much of the data on volunteering registers how individuals help tax-exempt nonprofit institutions, but volunteers can also assist informal organizations and associations.",
     "measures": [
       {
         "name": "Share of Americans who volunteer",
@@ -351,11 +351,11 @@
         },
         "sources": [
           {
-            "source": "Bureau of Labor Statisticsand Corporation for National and Community Service",
-            "source_url": ""
+            "source": "Current Population Survey: Volunteering and Civic Life Supplement",
+            "source_url": "https://www.census.gov/data/datasets/time-series/demo/cps/cps-supp_cps-repwgt/cps-volunteer.html"
           }
         ],
-        "notes": "Estimates pulled from the Current Population Survey Volunteering and Civic Life Supplement. This supplement was administered by the Bureau of Labor Statistics from 2002-2015 and recently transitioned to the Corporation for National and Community Service starting in 2017. The count of volunteers only includes persons who volunteered through or for an organization. The figures do not include persons who volunteered in a more informal manner."
+        "notes": "Estimates are pulled from the Current Population Survey Volunteering and Civic Life Supplement. This supplement was administered by the Bureau of Labor Statistics from 2002 to 2015 and since 2017 has been administered by the Corporation for National and Community Service. Only data prior to the change are presented here. The count of volunteers only includes people who volunteered through or for an organization. The figures do not include people who volunteered in a more informal manner."
       },
       {
         "name": "Total hours volunteered",
@@ -426,20 +426,20 @@
         },
         "sources": [
           {
-            "source": "Bureau of Labor Statistics",
-            "source_url": ""
+            "source": "Current Population Survey: Volunteering and Civic Life Supplement",
+            "source_url": "https://www.census.gov/data/datasets/time-series/demo/cps/cps-supp_cps-repwgt/cps-volunteer.html"
           }
         ],
-        "notes": "Estimates pulled from the Current Population Survey Volunteering and Civic Life Supplement. This supplement was administered by the Bureau of Labor Statistics from 2002-2015 and recently transitioned to the Corporation for National and Community Service (CNCS) starting in 2017. The count of volunteers only includes persons who volunteered through or for an organization. The figures do not include persons who volunteered in a more informal manner."
+        "notes": "Estimates pulled from the Current Population Survey Volunteering and Civic Life Supplement. This supplement was administered by the Bureau of Labor Statistics from 2002-2015. This supplement was administered by the Bureau of Labor Statistics from 2002-2015 and recently transitioned to the Corporation for National and Community Service (CNCS) starting in 2017. Only data prior to the change are presented here. The count of volunteers only includes persons who volunteered through or for an organization. The figures do not include persons who volunteered in a more informal manner."
       }
     ]
   },
   {
     "name": "Impact investing",
-    "description": "Impact investments intentionally seek social and environmental impact as well as financial returns and offer a way beyond charitable giving for individuals and institutions to have an impact.",
+    "description": "Individuals and institutions make impact investments to intentionally seek social and environmental impact as well as financial returns.",
     "measures": [
       {
-        "name": "Share of affluent households who participate in impact investing",
+        "name": "Share of high-net-worth households that participate in impact investing",
         "data": {
           "unit": "%",
           "unit_string": "",
@@ -459,11 +459,11 @@
         },
         "sources": [
           {
-            "source": "Bank of America/IUPUI Lilly School of Philanthropy",
+            "source": "Bank of America/Indiana University Lilly School of Philanthropy",
             "source_url": "https://www.privatebank.bankofamerica.com/articles/2021-bank-of-america-study-how-affluent-households-gave-back-in-2020.html"
           }
         ],
-        "notes": "Estimates are based on 2021 nationally representative random sample of 1,626 high-net-worth households and includes in-depth analysis based on age, gender, race, and sexual identity by IUPUI’s Lilly School of Philanthropy. High-net-worth households are defined as households with a net worth of $1M+ and/or have an annual income of $200,000+."
+        "notes": "Estimates are from 2021, are based on a nationally representative random sample of 1,626 high-net-worth households, and include in-depth analysis based on age, gender, race, and sexual identity by Indiana University’s Lilly School of Philanthropy. High-net-worth households are defined as those with a net worth of at least $1 million and/or with an annual income of at least $200,000."
       },
       {
         "name": "Total DAF assets in impact investment pools at Fidelity Charitable",
@@ -501,7 +501,7 @@
         "notes": "Estimates are calculated using data from 153,430 giving accounts in Fidelity Charitable’s internal reporting database."
       },
       {
-        "name": "Total amount of recoverable grantsby Fidelity Charitable DAFs to charities",
+        "name": "Total amount of recoverable grants made by Fidelity Charitable DAFs to charities",
         "data": {
           "unit": "M",
           "unit_string": "In millions of dollars ($)",
@@ -525,13 +525,13 @@
             "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html"
           }
         ],
-        "notes": "Recoverable grants are donations that can be repaid under some circumstances. Estimates are calculated using data from 153,430 giving accounts in Fidelity Charitable’s internal reporting database. Most recent study conducted January-December 2020."
+        "notes": "Recoverable grants are donations that can be repaid under some circumstances. Estimates are calculated using data from 153,430 giving accounts in Fidelity Charitable’s internal reporting database."
       }
     ]
   },
   {
     "name": "Political giving",
-    "description": "Traditionally, giving to political campaigns has not been considered a form of charitable giving. But the lines between political and charitable giving are becoming increasingly blurred through giving vehicles such as limited liability companies. Donations to party-focused organizations such as WinRed or ActBlue as well as donations to individual candidates or campaigns comprise political giving. (Gifts to 501(c)4s or political action committees are not included in this summary.)",
+    "description": "Traditionally, giving to political campaigns has not been considered a form of charitable giving. But the lines between political and charitable giving are becoming increasingly blurred through giving vehicles such as limited liability companies. Donations to party-focused organizations such as WinRed or ActBlue as well as donations to individual candidates and campaigns constitute political giving. (Gifts to 501(c)(4)s and political action committees are not included in this summary.)",
     "measures": [
       {
         "name": "Total donors that gave over $200 to a political campaign",
@@ -578,10 +578,10 @@
             "source_url": "https://www.opensecrets.org/elections-overview/donor-demographics?cycle=2020&display=A"
           }
         ],
-        "notes": "Estimates are taken from the Federal Election Commission, aggregated every calendar year (January-December). Fluctuations in political donations year-to-year are partially attributable to election cycles (e.g., presidential election years vs. off-year elections)."
+        "notes": "Estimates are taken from the Federal Election Commission, aggregated every calendar year (January-December). Fluctuations in political donations year to year are partially attributable to election cycles (e.g., presidential election years versus off-year elections)."
       },
       {
-        "name": "Total money contributed to political campaigns from donations over $200",
+        "name": "Total money contributed to political campaigns via donations over $200",
         "data": {
           "unit": "B",
           "unit_string": "In billions of dollars ($)",
@@ -625,7 +625,7 @@
             "source_url": "https://www.opensecrets.org/elections-overview/donor-demographics?cycle=2020&display=A"
           }
         ],
-        "notes": " Estimates are taken from the Federal Election Commission, aggregated every calendar year (January-December). Fluctuations in political donations year-to-year are in part attributable to election cycles (e.g., presidential election years vs. off-year elections)."
+        "notes": "Estimates are taken from the Federal Election Commission, aggregated every calendar year (January-December). Fluctuations in political donations year-to-year are in part attributable to election cycles (e.g., presidential election years vs. off-year elections)."
       },
       {
         "name": "Money donated to WinRed",
@@ -652,7 +652,7 @@
             "source_url": "https://winred.com/blog/keys-to-raise-more-on-winred/"
           }
         ],
-        "notes": "An online donation platform launched in June 2019, WinRed allows individuals to donate to Republican candidates and campaigns nationwide. Estimates include aggregate annual donations made to political campaigns using WinRed’s platform."
+        "notes": "An online donation platform launched in June 2019, WinRed enables individuals to donate to Republican candidates and campaigns nationwide. Estimates include aggregate annual donations made to political campaigns using WinRed’s platform."
       },
       {
         "name": "Money donated to ActBlue",
@@ -679,13 +679,13 @@
             "source_url": "https://report.actblue.com/"
           }
         ],
-        "notes": " An online donation platform launched in 2004, ActBlue allows individuals to donate to Democratic candidates and campaigns nationwide. Estimates include aggregate annual donations made to political campaigns using ActBlue’s platform."
+        "notes": "An online donation platform launched in 2004, ActBlue enables individuals to donate to Democratic candidates and campaigns nationwide. Estimates include aggregate annual donations made to political campaigns using ActBlue’s platform."
       }
     ]
   },
   {
-    "name": "Giving by Bequest",
-    "description": "Charitable bequests, which are tax-deductible gifts through a will or trust, can come in many forms and represent a significant share of total charitable contributions.",
+    "name": "Giving by bequest",
+    "description": "Charitable bequests, which are tax-deductible gifts given through wills or trusts, can come in many forms and represent a significant share of total charitable contributions.",
     "measures": [
       {
         "name": "Total giving by bequest",
@@ -728,10 +728,10 @@
             "source_url": "https://givingusa.org/"
           }
         ],
-        "notes": "Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics."
+        "notes": "Estimates rely on econometric methods developed by the Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics."
       },
       {
-        "name": "Share of total charitable contributions given through bequest",
+        "name": "Share of total charitable contributions given through bequests",
         "data": {
           "unit": "%",
           "unit_string": "",
@@ -771,13 +771,13 @@
             "source_url": "https://givingusa.org/"
           }
         ],
-        "notes": " Estimates rely on econometrics methods developed by Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics"
+        "notes": "Estimates rely on econometric methods developed by the Indiana University Lilly Family School of Philanthropy and tabulation of tax, data, economic indicators, and demographics."
       }
     ]
   },
   {
-    "name": "Remittance Giving",
-    "description": "Remittance giving constitutes cross-border, often recurrent person-to-person payments of relatively low value by migrants to their home countries.",
+    "name": "Remittance giving",
+    "description": "Remittance giving involves (often recurring) person-to-person payments of relatively small sums by migrants in one country to people in their home countries.",
     "measures": [
       {
         "name": "Remittances sent from US residents abroad",
@@ -794,35 +794,35 @@
             },
             {
               "date": "2017",
-              "value": "64"
+              "value": "64.1"
             },
             {
               "date": "2018",
-              "value": "67"
+              "value": "66.8"
             },
             {
               "date": "2019",
-              "value": "71.6"
+              "value": "71.4"
             },
             {
               "date": "2020",
-              "value": "68"
+              "value": "69.9"
             }
           ]
         },
         "sources": [
           {
             "source": "World Banck",
-            "source_url": "https://openknowledge.worldbank.org/handle/10986/33634"
+            "source_url": "https://data.worldbank.org/indicator/BM.TRF.PWKR.CD.DT?locations=US"
           }
         ],
-        "notes": "Estimates are drawn from Gross Domestic Product data from International Monetary Fund World Economic Outlook annually."
+        "notes": "Estimates are based on the International Monetary Fund’s balance of payments data."
       }
     ]
   },
   {
-    "name": "Donor-Advised Funds",
-    "description": "Donor-advised funds (DAFs) are giving accounts established at public charities that allow donors to make a charitable contribution, receive an immediate tax deduction, and recommend grants over time. The public charity maintains legal control over the contributions and works with the donor who can advise on funding recommendations.",
+    "name": "Donor-Advised funds",
+    "description": "Donor-advised funds (DAFs) are giving accounts established at public charities that allow donors to make a charitable contribution, receive an immediate tax deduction, and recommend grants over time. The public charity maintains legal control over the contributions and works with the donor, who can advise on funding recommendations.",
     "measures": [
       {
         "name": "Total value of contributions made to donor-advised funds",
@@ -864,7 +864,7 @@
         "notes": "Estimates are drawn from a longitudinal study of a representative sample from 976 charitable sponsors that reported DAF assets in any year."
       },
       {
-        "name": "Total number of DAFs in the US",
+        "name": "Total number of DAFs in the United States",
         "data": {
           "unit": "K",
           "unit_string": "",
@@ -943,7 +943,7 @@
             "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html"
           }
         ],
-        "notes": "Estimates are calculated using data from about 154,430 giving accounts in Fidelity Charitable’s internal reporting database."
+        "notes": "Estimates are calculated using data from an estimated 154,430 giving accounts in Fidelity Charitable’s internal reporting database."
       },
       {
         "name": "Total dollars contributed to DAFs at community foundations",
@@ -966,13 +966,13 @@
             "source_url": "https://www.commfoundations.com/blog/2021/3/2/grants-from-community-foundation-donor-advised-funds-soar-as-covid-19-inspires-wave-of-giving"
           }
         ],
-        "notes": "Estimates are sourced from a non-representative survey of 84 US community foundations. Study conducted between late 2020 and early 2021."
+        "notes": "Estimates are sourced from a nonrepresentative survey of 84 US community foundations. The study was conducted between late 2020 and early 2021."
       }
     ]
   },
   {
-    "name": "Workplace Giving",
-    "description": "Americans have long donated to charity through their employers, with contributions often channeled through payroll deductions. The employer would either donate these earmarked directly to a charity like the United Way or through a campaign like the Combined Federal Campaign. But workplace giving has declined in recent decades, with new technology and norms placing more autonomy in individual employees and less in the firms or charitable intermediaries.",
+    "name": "Workplace giving",
+    "description": "Americans have long donated to charity through their employers via contributions channeled through payroll deductions. Employers would traditionally either donate these earmarked contributions directly to charities like United Way or through campaigns like the Combined Federal Campaign. But workplace giving has declined in recent decades as new technology and norms have located autonomy more in individual employees and less in their employers and charitable intermediaries.",
     "measures": [
       {
         "name": "Total value of donations made through Benevity",
@@ -999,7 +999,7 @@
             "source_url": "https://benevity.com/impactlabs"
           }
         ],
-        "notes": "Benevity provides software that facilitates workplace giving and is used by many Fortune 500 companies. Estimates use Benevity’s master database which includes activities of more than 650 companies, including clients, users of the software and the community of causes."
+        "notes": "Benevity provides software that facilitates workplace giving and is used by many Fortune 500 companies. Estimates use Benevity’s master database, which includes activities of more than 650 companies, including clients, users of the software, and the community of causes."
       },
       {
         "name": "Aggregate charitable contributions from workplace giving programs",
@@ -1022,10 +1022,10 @@
             "source_url": "https://www.charities.org/news/america%E2%80%99s-charities-releases-groundbreaking-report-%E2%80%9Csnapshot-2017-what-us-employees-think-about"
           }
         ],
-        "notes": "Estimates are drawn from a 2017 survey conducted by America’s Charites of 1586 employees, representing 18 industry groups (education, financial, government, healthcare, technology, nonprofit, professional services, and consumer products).This figure is the most comprehensive and recent data point to capture the scale of workplace giving."
+        "notes": "Estimates are drawn from a 2017 survey conducted by America’s Charites of 1,586 employees representing 18 industry groups (including education, finance, government, health care, technology, nonprofits, professional services, and consumer products). This is the most comprehensive and recent data point capturing the scale of workplace giving."
       },
       {
-        "name": "Total dollars pledged by federal employees through the Combined Federal Campaign ",
+        "name": "Total dollars pledged by federal employees through the Combined Federal Campaign",
         "data": {
           "unit": "M",
           "unit_string": "In millions of dollars ($)",
@@ -1109,7 +1109,7 @@
             "source_url": "https://www.opm.gov/combined-federal-campaign/results-impact/"
           }
         ],
-        "notes": "The Combined Federal Campaign (CFC) is a federal government workplace giving campaign that allows federal employees and retirees to pledge monetary support to approved charities. Summary figures are released by the Office of Personnel Management and include aggregated pledges to charities by federal employees participating in the CFC campaign."
+        "notes": "The Combined Federal Campaign is a federal workplace-giving campaign that enables federal employees and retirees to pledge monetary support to approved charities. Summary figures are released by the Office of Personnel Management and include aggregated pledges to charities by federal employees participating in the campaign."
       },
       {
         "name": "Participation rate of federal employees in the Combined Federal Campaign",
@@ -1144,7 +1144,7 @@
             "source_url": "https://www.wg-alliance.org/research.html"
           }
         ],
-        "notes": "The Combined Federal Campaign (CFC) is a federal government workplace giving campaign that allows federal employees and retirees to pledge monetary support to approved charities. Summary figures are released by the Office of Personnel Management and include aggregated pledges to charities by federal employees participating in the CFC campaign."
+        "notes": "The Combined Federal Campaign is a federal government workplace giving campaign that enables federal employees and retirees to pledge monetary support to approved charities. Summary figures are released by the Office of Personnel Management and include aggregated pledges to charities by federal employees participating in the campaign."
       },
       {
         "name": "Total corporate giving",
@@ -1179,17 +1179,17 @@
         },
         "sources": [
           {
-            "source": "CECP Giving in Numbers",
+            "source": "Chief Executives for Corporate Purpose’s Giving in Numbers",
             "source_url": "https://cecp.co/home/resources/giving-in-numbers/"
           }
         ],
-        "notes": "Estimates for aggregate total giving are based on the sum of the total investments of all companies participating in the Giving in Number survey, which asks companies to report total contributions on a fiscal year basis (end date for 12 months of data)."
+        "notes": "Estimates for aggregate total giving are based on the sum of the total investments of all companies participating in the Giving in Numbers survey, which asks companies to report total contributions on a fiscal-year basis (end date for 12 months of data)."
       }
     ]
   },
   {
-    "name": "Online Giving",
-    "description": "Online giving includes any gift made through the internet, on any device or platform. The development of new electronic payment software, which includes any donations made using a credit or debit card, has enabled online giving and allowed more charitable organizations to accept electronic donations.",
+    "name": "Online giving",
+    "description": "Online giving includes any gift made through the internet, on any device or platform. As more organizations have accepted donations made using a credit or debit card, online giving has increased.",
     "measures": [
       {
         "name": "Share of all donations, excluding grants, made online",
@@ -1228,10 +1228,10 @@
             "source_url": "https://institute.blackbaud.com/charitable-giving-report/"
           }
         ],
-        "notes": "Estimates are drawn from financial analysis of Blackbaud clients. Latest study conducted from January to December 2020, including 4,964 non-profit organizations. Analysis does not include unfulfilled portion of the pledge gifts or recurring gifts that are processed offline."
+        "notes": "Estimates are drawn from financial analysis of Blackbaud clients. The latest study was conducted from January to December 2020 and included 4,964 nonprofit organizations. The analysis does not include the unfulfilled proportions of pledged gifts or recurring gifts processed offline."
       },
       {
-        "name": "Percent change in number of online donations ",
+        "name": "Percent change in number of online donations",
         "data": {
           "unit": "%",
           "unit_string": "",
@@ -1255,10 +1255,10 @@
             "source_url": "https://www.mastercardcenter.org/insights/highlights-techsoup-webinar"
           }
         ],
-        "notes": "Estimates use anonymized and aggregated Mastercard transaction data to provide an analysis of current and historical donation trends."
+        "notes": "These estimates use anonymized and aggregated Mastercard transaction data to provide an analysis of current and historical donation trends."
       },
       {
-        "name": "Percent change in individual donations made through electronic payment",
+        "name": "Percent change in individual donations made through electronic payments",
         "data": {
           "unit": "%",
           "unit_string": "",
@@ -1287,8 +1287,8 @@
     ]
   },
   {
-    "name": "Point of Sale",
-    "description": "Charity checkout campaigns offer customers an opportunity to donate during the checkout or payment process, by rounding up, adding to their total, or having the vendor automatically make a contribution on the buyer’s behalf.",
+    "name": "Point of sale",
+    "description": "Charity checkout campaigns offer customers an opportunity to donate during the checkout or payment process by rounding up, adding to their total, or having the vendor automatically make a contribution on their behalf.",
     "measures": [
       {
         "name": "Money raised by major charity checkout campaigns",
@@ -1330,7 +1330,7 @@
         "notes": "Estimates are aggregated self-reported data from 76 fundraising campaigns that have raised at least $1,000,000."
       },
       {
-        "name": "Cumulative donations to Lyft’s Round Up and Donate program",
+        "name": "Total donations to charities via Lyft’s Round Up and Donate program",
         "data": {
           "unit": "M",
           "unit_string": "In millions of dollars ($)",
@@ -1358,7 +1358,7 @@
             "source_url": "https://investor.lyft.com/financials-and-reports/esg/default.aspx"
           }
         ],
-        "notes": "Started in 2017, the Round Up and Donate program by Lyft, a rideshare company, allows passengers to donate to a cause of their choice. Estimates provided by Lyft on how much their riders have donated to Lyft’s sponsored charitable organizations since the inception of Round Up and Donate in 2017."
+        "notes": "Started in 2017, the rideshare company Lyft’s Round Up and Donate program enables passengers to donate to one of 18 pre-selected charities. These estimates provided by Lyft show how much their riders have donated to Lyft’s sponsored charitable organizations since the program began."
       },
       {
         "name": "Total donated to charities from AmazonSmile",
@@ -1385,13 +1385,13 @@
             "source_url": "https://sustainability.aboutamazon.com/about/report-builder"
           }
         ],
-        "notes": "Estimates are drawn from aggregated donations made via AmazonSmile, a program where shoppers can buy goods through smile.amazon.com and choose from over one million eligible 501(c)(3) public charitable organizations for Amazon to donate 0.5 percent of eligible purchases."
+        "notes": "Estimates are drawn from aggregated donations made via AmazonSmile, a program where shoppers can buy products through smile.amazon.com and choose from over 1 million eligible 501(c)(3) public charitable organizations to which Amazon will donate 0.5 percent of eligible purchases."
       }
     ]
   },
   {
     "name": "Digital currency",
-    "description": "With the rise and increasing societal acceptance of digital currencies, such as Bitcoin, more charitable organizations are allowing digital currency donations. In recent years, some donors have made extremely large contributions involving cryptocurrency, though the exact value of the donations have fluctuated dramatically given the high volatility of many digital coins.",
+    "description": "As digital currencies like Bitcoin become more popular, more charitable organizations are allowing digital currency donations. In recent years, some donors have made extremely large contributions involving cryptocurrency, though the exact values of the donations have fluctuated dramatically given the high volatility of many cryptocurrencies.",
     "measures": [
       {
         "name": "Charitable contributions in the form of cryptocurrency to Fidelity Charitable",
@@ -1430,16 +1430,16 @@
             "source_url": "https://www.fidelitycharitable.org/insights/2021-giving-report.html"
           }
         ],
-        "notes": "Estimates are calculated using data from 153,430 giving accounts in Fidelity Charitable’s internal reporting database. Study conducted January-December 2020."
+        "notes": "Estimates are calculated using data from 153,430 giving accounts in Fidelity Charitable’s internal reporting database."
       }
     ]
   },
   {
     "name": "Donor participation",
-    "description": "One of the distinguishing characteristics of charitable giving in the US has long been the large share of Americans who report giving to charitable organizations. But in recent years, research suggests that share has been in steady decline. Whether that decline in the “donor pool” reflects a lessening or a rechanneling of charitable giving is a major question confronting researchers.",
+    "description": "One of the distinguishing characteristics of charitable giving in the United States has long been the large share of Americans who report giving to charitable organizations. But research suggests that in recent years, this share has steadily declined. Whether this decline in the “donor pool” reflects a lessening or a rechanneling of charitable giving is a major question confronting researchers.",
     "measures": [
       {
-        "name": "Share of US households who report donating money to one or more charitable organization in the last year",
+        "name": "Share of US households that reported donating money to one or more charitable organization the previous year",
         "data": {
           "unit": "%",
           "unit_string": "",
@@ -1495,10 +1495,10 @@
             "source_url": "https://scholarworks.iupui.edu/handle/1805/26290"
           }
         ],
-        "notes": "Data from The Indiana University Lilly Family School of Philanthropy’s Philanthropy Panel Study (PPS), which is a module of the University of Michigan’s Panel Study of Income Dynamics (PSID). The PPS is biennial surveys with data collected in odd years about behaviors in even years (e.g., the 2019 wave of the PPS was collected in 2019 about giving in 2018), with a sample size of 7,000-9,000 per wave. The PPS limits questions about giving to households who gave at least $25. Therefore, individuals or household who donated between $1 and $24 are marked as non-donors in the PPS data."
+        "notes": "These data are from the Indiana University Lilly Family School of Philanthropy’s Philanthropy Panel Study (PPS), which is a module of the University of Michigan’s Panel Study of Income Dynamics. The PPS is a biennial survey that collects data in odd years about behaviors in even years (e.g., the 2019 wave of the PPS was collected in 2019 about giving in 2018), with a sample size of 7,000 to 9,000 per wave. The PPS limits questions about giving to households that gave at least $25. Therefore, individuals or households that donated between $1 and $24 are marked as nondonors in the PPS data."
       },
       {
-        "name": "Share of Americans who report donating money to a charitable organization in the last year",
+        "name": "Share of Americans who reported donating money to a charitable organization in the past twelve months",
         "data": {
           "unit": "%",
           "unit_string": "",
@@ -1554,10 +1554,10 @@
             "source_url": "https://news.gallup.com/poll/310880/percentage-americans-donating-charity-new-low.aspx"
           }
         ],
-        "notes": "Estimates rely on telephone interviews conducted by pollsters with a random sample of more than 1000 adults living in all 50 states and the District of Columbia. Respondents are asked separately about donating money/volunteering time to charitable organizations."
+        "notes": "Estimates rely on telephone interviews conducted by pollsters with a random sample of more than 1,000 adults living in all 50 states and the District of Columbia. Respondents were asked separately about donating money and volunteering time to charitable organizations."
       },
       {
-        "name": "Percent change in total number of donors from previous year ",
+        "name": "Percent change in total number of donors from previous year",
         "data": {
           "unit": "%",
           "unit_string": "",
@@ -1597,7 +1597,7 @@
             "source_url": "https://afpglobal.org/fepreportsdownloadcenter"
           }
         ],
-        "notes": "Estimates of total donors are calculated by the Fundraising Effectiveness Project using anonymized giving transaction data from a variety of donor softwares, such as Bloomerang, DonorPerfect, ETapestry, NeonOne, and Clearview. Surveys conducted each year from 2015 to 2019 and included 10,640 non-profit organizations in 2019."
+        "notes": "Estimates of total donors were calculated by the Fundraising Effectiveness Project using anonymized giving transaction data from a variety of donor software, such as Bloomerang, DonorPerfect, ETapestry, NeonOne, and Clearview. Most recent complete annual calculations (2020) are drawn from a randomly sampled, representative sample of 2,496 nonprofit organizations."
       },
       {
         "name": "Donor retention rate",
@@ -1636,16 +1636,16 @@
             "source_url": "https://afpglobal.org/fepreportsdownloadcenter"
           }
         ],
-        "notes": "Estimates of total donors are calculated by the Fundraising Effectiveness Project using anonymized giving transaction data from a variety of donor softwares, such as Bloomerang, DonorPerfect, ETapestry, NeonOne, and Clearview. Donor retention rate represents the percent of donors that made repeat gifts to participating nonprofits from the previous year. Surveys conducted each year from 2015 to 2019 and included 10,640 non-profit organizations in 2019."
+        "notes": "Estimates of total donors were calculated by the Fundraising Effectiveness Project using anonymized giving transaction data from a variety of donor software, such as Bloomerang, DonorPerfect, ETapestry, NeonOne, and Clearview. Donor retention rate represents the percentage of donors that made repeat gifts to participating nonprofits from the previous year. Most recent complete annual calculations (2020) are drawn from a randomly sampled, representative sample of 2,496 nonprofit organizations."
       }
     ]
   },
   {
-    "name": "Mutual Aid",
-    "description": "Mutual aid has a long tradition and has been defined in many ways, including “any group, often unincorporated, organized with the intention of meeting the immediate needs of their fellow neighbors”.",
+    "name": "Mutual aid",
+    "description": "Mutual aid has a long tradition and has been defined in many ways, but at its root, it entails a group, often unincorporated, providing assistance to meet the immediate needs of its neighbors.",
     "measures": [
       {
-        "name": "Number of donations to mutual aid networks through ioby",
+        "name": "Number of donations made to mutual aid networks through ioby",
         "data": {
           "unit": "K",
           "unit_string": "",
@@ -1669,7 +1669,7 @@
             "source_url": ""
           }
         ],
-        "notes": "Estimates are pulled from raw data provided by ioby, a crowdfunding platform. The 2020 estimate only contains data from March-December of the year, so is an incomplete comparison to 2021 but is included above to contextualize change over time. The totals do not include matched contributions made by ioby. The definition of mutual aid comes from Erin Barnes, co-founder and CEO of ioby."
+        "notes": "Estimates are pulled from raw data provided by ioby, a crowdfunding platform. Because the 2020 estimate only contains data from March-December of the year, the comparison with 2021 is incomplete, but we include it to contextualize change over time. The totals do not include matched contributions made by ioby."
       }
     ]
   },
@@ -1698,13 +1698,13 @@
             "source_url": "http://impact.philanthropytogether.org/"
           }
         ],
-        "notes": "Estimate pulled from Philanthropy Together’s Global Giving Circle Directory as of October 2021. The Global Giving Circle Directory provides a searchable directory of giving circles created by Philanthropy Together, a global initiative to promote giving circles."
+        "notes": "This estimate was pulled from Philanthropy Together’s Global Giving Circle Directory as of October 2021. The Global Giving Circle Directory is a searchable directory of giving circles created by Philanthropy Together, a global initiative to promote giving circles."
       }
     ]
   },
   {
     "name": "Crowdfunding",
-    "description": "Crowdfunding, which entails a large number of people each donating small amounts of money, has grown in popularity in recent years in large part because of virtual crowdfunding platforms, such as GoFundMe and DonorsChoose, and apps that have simplified monetary transactions. ",
+    "description": "Crowdfunding, which entails large numbers of people each donating small amounts of money, has become more popular in recent years largely because of virtual crowdfunding platforms, such as GoFundMe and DonorsChoose, and apps that have simplified monetary transactions.",
     "measures": [
       {
         "name": "Average crowdfunding gift size",
@@ -1723,14 +1723,14 @@
         },
         "sources": [
           {
-            "source": "IUPUI Lilly School of Philanthropy",
+            "source": "Indiana University Lilly School of Philanthropy",
             "source_url": "https://philanthropy.iupui.edu/news-events/news-item/new-study-finds-differences-between-crowdfunding-donors-and-traditional-charitable-giving-donors.html?id=354"
           }
         ],
-        "notes": "Estimates are drawn from a 2020 survey of 1,535 US households developed by the Lilly Family School of Philanthropy and fielded using the AmeriSpeak panel by NORC. Weights were applied in the analysis to ensure that the final sample was representative of the general U.S. households."
+        "notes": "Estimates were drawn from a 2020 survey of 1,535 US households developed by the Lilly Family School of Philanthropy and fielded using the AmeriSpeak panel by NORC at the University of Chicago. Weights were applied in the analysis to ensure that the final sample was representative of US households with respect to age, gender, race/ethnicity, and education."
       },
       {
-        "name": "Total money raised from GoFundMe campaigns since 2010",
+        "name": "Total money raised from GoFundMe campaigns since the platform’s founding in 2010",
         "data": {
           "unit": "B",
           "unit_string": "In billions of dollars ($)",
@@ -1762,7 +1762,7 @@
             "source_url": "https://www.gofundme.com/2020"
           }
         ],
-        "notes": "GoFundMe allows individuals to set up crowdfunding campaigns for any purpose. Estimates are sourced from GoFundMe public reports that share estimates of money raised across all campaigns, which aggregate all donations made to crowdfunding campaigns across the platform since it was founded in 2010 (not annual estimates)."
+        "notes": "GoFundMe enables individuals to set up crowdfunding campaigns for any purpose. Estimates are sourced from GoFundMe public reports that share estimates of money raised across all campaigns, which aggregate all donations made to crowdfunding campaigns across the platform since it was founded in 2010 (not annual estimates)."
       },
       {
         "name": "Share of donations made on GoFundMe under $50",
@@ -1793,7 +1793,7 @@
             "source_url": "https://www.gofundme.com/2020"
           }
         ],
-        "notes": "GoFundMe allows individuals to set up crowdfunding campaigns for any purpose. Estimates are sourced from GoFundMe public reports for 2019 and 2020, which aggregate all donations made to crowdfunding campaigns across the platform.  "
+        "notes": "GoFundMe enables individuals to set up crowdfunding campaigns for any purpose. Estimates are sourced from GoFundMe public reports for 2019 and 2020, which aggregate all donations made to crowdfunding campaigns across the platform."
       },
       {
         "name": "Total grants and contributions to DonorsChoose",
@@ -1832,16 +1832,16 @@
             "source_url": "https://www.donorschoose.org/about/finance.html"
           }
         ],
-        "notes": "DonorsChoose allows teachers to set up crowdfunding campaigns for classroom projects. Estimates are drawn from DonorsChoose’s public tax records, isolating the contributions and grants component of their annual total revenue."
+        "notes": "DonorsChoose enables teachers to set up crowdfunding campaigns for classroom projects. Estimates are drawn from DonorsChoose’s public tax records, isolating the contributions and grants component of its annual total revenue."
       }
     ]
   },
   {
-    "name": "Giving Days",
-    "description": "Giving days, which are organized efforts to mobilize large-scale donations, often use hashtags and social media to motivate potential donors. The largest giving day, GivingTuesday, the Tuesday after Thanksgiving, was launched in the US in 2012 and is now hosted in more than 70 countries worldwide.",
+    "name": "Giving days",
+    "description": "Giving days, which are organized efforts to mobilize large-scale donations, often use social media to motivate potential donors. The largest giving day, GivingTuesday (the Tuesday after Thanksgiving), was launched in the United States in 2012 and is now hosted in more than 70 countries worldwide.",
     "measures": [
       {
-        "name": "Total dollars donated in the US on GivingTuesday ",
+        "name": "Total dollars donated in the United States on GivingTuesday",
         "data": {
           "unit": "B",
           "unit_string": "In billions of dollars ($)",
@@ -1872,7 +1872,7 @@
         "notes": "Estimates are based on GivingTuesday Data Collaborative’s statistical model that estimates online and offline giving."
       },
       {
-        "name": "Total US online donations made on GivingTuesday ",
+        "name": "Total US online donations made on GivingTuesday",
         "data": {
           "unit": "M",
           "unit_string": "In millions of dollars ($)",
@@ -1900,7 +1900,7 @@
             "source_url": "https://www.givingtuesday.org/about/impact/"
           }
         ],
-        "notes": "Estimates are based on GivingTuesday Data Collaborative’s aggregation of transaction data from their network of platform reports each year."
+        "notes": "Estimates are based on GivingTuesday Data Collaborative’s aggregation of transaction data from its network of platform reports each year."
       }
     ]
   }
