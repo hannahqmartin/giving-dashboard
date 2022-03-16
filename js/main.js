@@ -138,7 +138,7 @@ Promise.all([
       let lastChange = NaN;
       if (thisData.length > 1) {
         secondToLastNumber = thisData[thisData.length - 2].value;
-        lastChange = ((lastNumber - secondToLastNumber) / secondToLastNumber * 100).toFixed(1);
+        lastChange = +((lastNumber - secondToLastNumber) / secondToLastNumber * 100).toFixed(1);
       }
 
       if (isNaN(lastChange)) {
