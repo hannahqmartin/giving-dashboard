@@ -55,13 +55,15 @@ Promise.all([
       })
       let yExtent = d3.extent(d.data.values, function(v){
         return v.value;
-      })
+      });
+      let yDomainMin = yExtent[0] > 0 ? 0.95 * yExtent[0] : 1.05 * yExtent[0];
+      let yDomainMax = yExtent[1] > 0 ? 1.05 * yExtent[1] : 0.95 * yExtent[1];
       d.xScale = d3.scaleTime()
         .range([0, width])
         .domain(xExtent)
       d.yScale = d3.scaleLinear()
         .range([height, margin.top])
-        .domain([0.95 * yExtent[0], 1.05 * yExtent[1]])
+        .domain([yDomainMin, yDomainMax])
       d.line = line = d3.line()
         // .curve(d3.curveMonotoneX)
         .x(function(v){
