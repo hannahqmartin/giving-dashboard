@@ -16,7 +16,7 @@ Promise.all([
   let everyNLabels, nTicks;
   if (isMobile) {
     everyNLabels = 5;
-    nTicks = 5;
+    nTicks = 4;
   } else {
     everyNLabels = 7;
     nTicks = 5;
@@ -42,7 +42,7 @@ Promise.all([
   }
 
   const width = graphWidth - margin.left - margin.right,
-        height = graphWidth * 4.5 / 10 - margin.top - margin.bottom;
+        height = isMobile ? graphWidth * 3 / 5 - margin.top - margin.bottom : graphWidth * 4.5 / 10 - margin.top - margin.bottom;
 
   donations.forEach(function(n){
     n.measures.forEach(function(d){
