@@ -181,6 +181,7 @@ Promise.all([
 
   const divInfo = divs.append("div")
     .attr("class", "details")
+    .classed("show", true);
 
   divInfo.append("div")
     .attr("class", "description")
@@ -224,6 +225,20 @@ Promise.all([
     .html(function(d){
       return d.data.unit_string;
     })
+
+  function normalizeHeight(divGroup) {
+    let titlesHeight = d3.max(divGroup._groups, function(g){
+      return d3.select(g[0]).node().getBoundingClientRect().height;
+    })
+    divGroup.style("height", titlesHeight + 'px');
+  }
+
+  if (!isMobile) {
+    rowDivs.each(function(d){
+      normalizeHeight(d3.select(this).selectAll(".graph").selectAll(".title"));
+      normalizeHeight(d3.select(this).selectAll(".graph").selectAll(".unit"));
+    })
+  }
 
   const graphs = graphDiv.append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -346,5 +361,7 @@ Promise.all([
       .html(function(d){
         return '<span>Notes:</span> ' + d.notes;
       })
+
+    divInfo.classed("show", false);
 
 })
