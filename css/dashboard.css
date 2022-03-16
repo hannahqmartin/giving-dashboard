@@ -116,7 +116,7 @@
 .change {
   /* border: 1px solid #b5c9d2; */
   border-radius: 5px;
-  width: 80px;
+  width: 90px;
   padding: 5px 5px;
   color: #FFFFFF;
   background-color: #c4c4c4;
@@ -145,7 +145,7 @@
   /* z-index: -1; */
   background-image: url("../img/arrow-right-up.svg");
   background-repeat: no-repeat;
-  background-position-x: calc(100% - 65px);
+  background-position-x: calc(100% - 75px);
   background-position-y: 2.5px;
   background-size: 16px;
 }
@@ -165,7 +165,7 @@
   /* z-index: -1; */
   background-image: url("../img/arrow-right-down.svg");
   background-repeat: no-repeat;
-  background-position-x: calc(100% - 65px);
+  background-position-x: calc(100% - 75px);
   background-position-y: 2.5px;
   background-size: 16px;
 }
@@ -305,13 +305,13 @@
   .change {
     font-size: 14px;
     line-height: 18px;
-    width: 70px;
+    width: 80px;
     padding: 4px;
   }
 
   .change.positive::before, .change.negative::before {
     background-position-y: 0;
-    background-position-x: calc(100% - 55px);
+    background-position-x: calc(100% - 65px);
   }
 
   .description {
