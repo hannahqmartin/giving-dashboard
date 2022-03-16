@@ -134,7 +134,7 @@ Promise.all([
         lastNumberLabel = lastNumberPrefix + lastNumber.toFixed(d.measures[0].data.significant_figures) + lastNumberSufix;
       }
       let lastDate = thisData[thisData.length - 1].date;
-      lastDateLabel = lastDate + '';
+      lastDateLabel = d.measures[0].parseDate(lastDate).getFullYear() + '';
       let lastChange = NaN;
       if (thisData.length > 1) {
         secondToLastNumber = thisData[thisData.length - 2].value;
