@@ -16,10 +16,10 @@ Promise.all([
   let everyNLabels, nTicks;
   if (isMobile) {
     everyNLabels = 5;
-    nTicks = 4;
+    nTicks = 5;
   } else {
     everyNLabels = 7;
-    nTicks = 4;
+    nTicks = 5;
   }
   let indicatorPadding, chartPadding;
 
@@ -70,20 +70,6 @@ Promise.all([
         .y(function(v){
           return d.yScale(v.value)
         })
-      d.xAxis = d3.axisBottom()
-          .tickFormat(function (t, i){
-            if ((i % every) == 0) {
-              return d3.timeFormat(d.data.date_format)(t);
-            } else {
-              return '';
-            }
-          })
-          .ticks(d.data.values.length)
-          .scale(d.xScale);
-      d.yAxis = d3.axisLeft()
-          .tickFormat(t => t + d.data.unit)
-          .ticks(nTicks)
-          .scale(d.yScale);
 
       let every = Math.floor(d.data.values.length / everyNLabels) + 1;
 
@@ -93,6 +79,21 @@ Promise.all([
         v.label = v.value.toFixed(d.data.significant_figures) + d.data.unit;
         v.display = (i % every) == 0;
       });
+
+      d.xAxis = d3.axisBottom()
+          .tickFormat(function (t, i){
+            if ((i % every) == 0) {
+              return d3.timeFormat(d.data.date_format)(t);
+            } else {
+              return '';
+            }
+          })
+          .tickValues(d.data.values.map(v => d.parseDate(v.date)))
+          .scale(d.xScale);
+      d.yAxis = d3.axisLeft()
+          .tickFormat(t => t + d.data.unit)
+          .ticks(Math.max(nTicks, d.data.values.length / 2))
+          .scale(d.yScale);
     })
   })
 
