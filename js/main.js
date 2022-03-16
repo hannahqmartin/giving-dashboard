@@ -38,7 +38,7 @@ Promise.all([
   if (isMobile) {
     margin  = {top: 20, right: 30, bottom: 20, left: 50};
   } else {
-    margin  = {top: 10, right: 20, bottom: 10, left: 50};
+    margin  = {top: 10, right: 30, bottom: 10, left: 50};
   }
 
   const width = graphWidth - margin.left - margin.right,
