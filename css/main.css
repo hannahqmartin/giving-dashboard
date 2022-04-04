@@ -477,6 +477,10 @@ p.general {
   line-height: 32.5px;
 }
 
+p.general span {
+  font-weight: 700;
+}
+
 p.postScrolly {
   margin-top: 5rem;
 }

@@ -36,13 +36,13 @@ Promise.all([
 
   let margin;
   if (isMobile) {
-    margin  = {top: 20, right: 30, bottom: 20, left: 30};
+    margin  = {top: 20, right: 30, bottom: 20, left: 50};
   } else {
-    margin  = {top: 20, right: 30, bottom: 20, left: 30};
+    margin  = {top: 10, right: 30, bottom: 10, left: 50};
   }
 
   const width = graphWidth - margin.left - margin.right,
-        height = graphWidth * 4.5 / 10 - margin.top - margin.bottom;
+        height = isMobile ? graphWidth * 3 / 5 - margin.top - margin.bottom : graphWidth * 4.5 / 10 - margin.top - margin.bottom;
 
   donations.forEach(function(n){
     n.measures.forEach(function(d){
@@ -55,13 +55,15 @@ Promise.all([
       })
       let yExtent = d3.extent(d.data.values, function(v){
         return v.value;
-      })
+      });
+      let yDomainMin = yExtent[0] > 0 ? 0.95 * yExtent[0] : 1.05 * yExtent[0];
+      let yDomainMax = yExtent[1] > 0 ? 1.05 * yExtent[1] : 0.95 * yExtent[1];
       d.xScale = d3.scaleTime()
         .range([0, width])
         .domain(xExtent)
       d.yScale = d3.scaleLinear()
-        .range([height - margin.bottom, margin.top])
-        .domain(yExtent)
+        .range([height, margin.top])
+        .domain([yDomainMin, yDomainMax])
       d.line = line = d3.line()
         // .curve(d3.curveMonotoneX)
         .x(function(v){
@@ -70,16 +72,6 @@ Promise.all([
         .y(function(v){
           return d.yScale(v.value)
         })
-      d.xAxis = d3.axisBottom()
-          .tickFormat(function (t, i){
-            if ((i % every) == 0) {
-              return d3.timeFormat(d.data.date_format)(t);
-            } else {
-              return '';
-            }
-          })
-          .ticks(d.data.values.length)
-          .scale(d.xScale);
 
       let every = Math.floor(d.data.values.length / everyNLabels) + 1;
 
@@ -89,6 +81,21 @@ Promise.all([
         v.label = v.value.toFixed(d.data.significant_figures) + d.data.unit;
         v.display = (i % every) == 0;
       });
+
+      d.xAxis = d3.axisBottom()
+          .tickFormat(function (t, i){
+            if ((i % every) == 0) {
+              return d3.timeFormat(d.data.date_format)(t);
+            } else {
+              return '';
+            }
+          })
+          .tickValues(d.data.values.map(v => d.parseDate(v.date)))
+          .scale(d.xScale);
+      d.yAxis = d3.axisLeft()
+          .tickFormat(t => t + d.data.unit)
+          .ticks(Math.max(nTicks, d.data.values.length / 2))
+          .scale(d.yScale);
     })
   })
 
@@ -129,11 +136,11 @@ Promise.all([
         lastNumberLabel = lastNumberPrefix + lastNumber.toFixed(d.measures[0].data.significant_figures) + lastNumberSufix;
       }
       let lastDate = thisData[thisData.length - 1].date;
-      lastDateLabel = lastDate + '';
+      lastDateLabel = d.measures[0].parseDate(lastDate).getFullYear() + '';
       let lastChange = NaN;
       if (thisData.length > 1) {
         secondToLastNumber = thisData[thisData.length - 2].value;
-        lastChange = ((lastNumber - secondToLastNumber) / secondToLastNumber * 100).toFixed(1);
+        lastChange = +((lastNumber - secondToLastNumber) / secondToLastNumber * 100).toFixed(1);
       }
 
       if (isNaN(lastChange)) {
@@ -174,6 +181,7 @@ Promise.all([
 
   const divInfo = divs.append("div")
     .attr("class", "details")
+    .classed("show", true);
 
   divInfo.append("div")
     .attr("class", "description")
@@ -218,6 +226,20 @@ Promise.all([
       return d.data.unit_string;
     })
 
+  function normalizeHeight(divGroup) {
+    let titlesHeight = d3.max(divGroup._groups, function(g){
+      return d3.select(g[0]).node().getBoundingClientRect().height;
+    })
+    divGroup.style("height", titlesHeight + 'px');
+  }
+
+  if (!isMobile) {
+    rowDivs.each(function(d){
+      normalizeHeight(d3.select(this).selectAll(".graph").selectAll(".title"));
+      normalizeHeight(d3.select(this).selectAll(".graph").selectAll(".unit"));
+    })
+  }
+
   const graphs = graphDiv.append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.left + margin.right)
@@ -232,8 +254,22 @@ Promise.all([
   //   });
 
   g.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + (margin.top + height - margin.bottom) + ")")
+    .attr("class", "y-axis")
+    .attr("transform", "translate(0,0)")
+    .each(function(d, i){
+      let thisG = d3.select(this);
+      thisG.call(d.yAxis);
+      thisG.selectAll(".tick line")
+        .attr("x2", width);
+      thisG.selectAll(".domain").remove();
+      thisG.selectAll("text")
+        // .attr("dy", -5)
+        // .attr("x", 2*margin.left);
+    });
+
+  g.append("g")
+    .attr("class", "x-axis")
+    .attr("transform", "translate(0," + height + ")")
     .each(function(d, i){
       d3.select(this).call(d.xAxis);
     });
@@ -268,31 +304,30 @@ Promise.all([
       })
       .attr("r", circleRadius)
 
-  g.selectAll(".label")
-    .data(function(d){
-      return d.data.values;
-    })
-    .join("text")
-      .attr("class", "label")
-      .style("opacity", function(d){
-        if (d.display) {
-          return 1;
-        } else {
-          return 0;
-        }
-      })
-      .style("text-align", "middle")
-      .text(function(d){
-        return d.label;
-      })
-      .attr("x", function(d){
-        let rect = d3.select(this).node().getBoundingClientRect();
-        return d.cx - rect.width / 2;
-      })
-      .attr("y", function(d){
-        return d.cy - labelYOffset;
-      })
-      // .attr("r", circleRadius)
+  // g.selectAll(".label")
+  //   .data(function(d){
+  //     return d.data.values;
+  //   })
+  //   .join("text")
+  //     .attr("class", "label")
+  //     .style("opacity", function(d){
+  //       if (d.display) {
+  //         return 1;
+  //       } else {
+  //         return 0;
+  //       }
+  //     })
+  //     .style("text-align", "middle")
+  //     .text(function(d){
+  //       return d.label;
+  //     })
+  //     .attr("x", function(d){
+  //       let rect = d3.select(this).node().getBoundingClientRect();
+  //       return d.cx - rect.width / 2;
+  //     })
+  //     .attr("y", function(d){
+  //       return d.cy - labelYOffset;
+  //     })
 
   graphDiv.append("div")
     .attr("class", "source")
@@ -326,5 +361,7 @@ Promise.all([
       .html(function(d){
         return '<span>Notes:</span> ' + d.notes;
       })
+
+    divInfo.classed("show", false);
 
 })
