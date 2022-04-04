@@ -6,7 +6,6 @@ Promise.all([
   d3.json('data/donations.json')
 ]).then(function(data) {
   let donations = data[0];
-  console.log(donations);
 
   const isMobile = $(window).width() < 770;
 
@@ -60,17 +59,16 @@ Promise.all([
       let yDomainMax = yExtent[1] > 0 ? 1.05 * yExtent[1] : 0.95 * yExtent[1];
       d.xScale = d3.scaleTime()
         .range([0, width])
-        .domain(xExtent)
+        .domain(xExtent);
       d.yScale = d3.scaleLinear()
         .range([height, margin.top])
-        .domain([yDomainMin, yDomainMax])
+        .domain([yDomainMin, yDomainMax]);
       d.line = line = d3.line()
-        // .curve(d3.curveMonotoneX)
         .x(function(v){
-          return d.xScale(d.parseDate(v.date))
+          return d.xScale(d.parseDate(v.date));
         })
         .y(function(v){
-          return d.yScale(v.value)
+          return d.yScale(v.value);
         })
 
       let every = Math.floor(d.data.values.length / everyNLabels) + 1;
@@ -107,8 +105,7 @@ Promise.all([
       .attr("id", function(d){
         return nameNoSpaces(d.name);
       })
-      .style("margin", "0px " + indicatorPadding + "px")
-      // .style("padding", indicatorPadding + "px 0px")
+      .style("margin", "0px " + indicatorPadding + "px");
 
   divs.append("div")
     .attr("class", "summary")
@@ -176,8 +173,8 @@ Promise.all([
         .attr("x", function(d){
           let rect = d3.select(this).node().getBoundingClientRect();
           return d.cx - rect.width / 2;
-        })
-    })
+        });
+    });
 
   const divInfo = divs.append("div")
     .attr("class", "details")
@@ -187,10 +184,10 @@ Promise.all([
     .attr("class", "description")
       .html(function(d){
         return d.description;
-      })
+      });
 
   const graphsDiv = divInfo.append("div")
-    .attr("class", "graphs")
+    .attr("class", "graphs");
 
   const rowDivs = graphsDiv.selectAll("div")
     .data(function(d){
@@ -202,7 +199,7 @@ Promise.all([
       }, []);
     })
     .join("div")
-      .attr("class", "row")
+      .attr("class", "row");
 
   const graphDiv = rowDivs.selectAll(".graph")
     .data(function(d){
@@ -212,19 +209,19 @@ Promise.all([
       .attr("class", "graph")
       .style("display", "inline-block")
       .style("max-width", (graphWidth - 1) + "px")
-      .style("padding", "0px " + chartPadding + "px")
+      .style("padding", "0px " + chartPadding + "px");
 
   graphDiv.append("div")
     .attr("class", "title")
     .html(function(d){
       return d.name;
-    })
+    });
 
   graphDiv.append("div")
     .attr("class", "unit")
     .html(function(d){
       return d.data.unit_string;
-    })
+    });
 
   function normalizeHeight(divGroup) {
     let titlesHeight = d3.max(divGroup._groups, function(g){
@@ -242,16 +239,10 @@ Promise.all([
 
   const graphs = graphDiv.append("svg")
     .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.left + margin.right)
+    .attr("height", height + margin.left + margin.right);
 
   const g = graphs.append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-
-  // g.append("text")
-  //   .attr("class", "title")
-  //   .text(function(d){
-  //     return d.name
-  //   });
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   g.append("g")
     .attr("class", "y-axis")
@@ -262,9 +253,6 @@ Promise.all([
       thisG.selectAll(".tick line")
         .attr("x2", width);
       thisG.selectAll(".domain").remove();
-      thisG.selectAll("text")
-        // .attr("dy", -5)
-        // .attr("x", 2*margin.left);
     });
 
   g.append("g")
@@ -274,9 +262,6 @@ Promise.all([
       d3.select(this).call(d.xAxis);
     });
 
-  // g.selectAll(".tick line")
-  //   .remove()
-
   g.append("path")
     .attr("fill", "none")
     .attr("stroke-width", 1.0)
@@ -284,10 +269,9 @@ Promise.all([
     .attr("stroke-linecap", "round")
     .style("mix-blend-mode", "multiply")
     .attr("opacity", 1.0)
-    // .attr("class", d => "curve "+nameNoSpaces(d.Sector))
     .attr("stroke",  "steelblue")
     .attr("d", function(d){
-      return d.line(d.data.values)
+      return d.line(d.data.values);
     });
 
   g.selectAll("circle")
@@ -302,32 +286,7 @@ Promise.all([
       .attr("cy", function(d){
         return d.cy;
       })
-      .attr("r", circleRadius)
-
-  // g.selectAll(".label")
-  //   .data(function(d){
-  //     return d.data.values;
-  //   })
-  //   .join("text")
-  //     .attr("class", "label")
-  //     .style("opacity", function(d){
-  //       if (d.display) {
-  //         return 1;
-  //       } else {
-  //         return 0;
-  //       }
-  //     })
-  //     .style("text-align", "middle")
-  //     .text(function(d){
-  //       return d.label;
-  //     })
-  //     .attr("x", function(d){
-  //       let rect = d3.select(this).node().getBoundingClientRect();
-  //       return d.cx - rect.width / 2;
-  //     })
-  //     .attr("y", function(d){
-  //       return d.cy - labelYOffset;
-  //     })
+      .attr("r", circleRadius);
 
   graphDiv.append("div")
     .attr("class", "source")
@@ -338,18 +297,18 @@ Promise.all([
         sourceHtml += '<a href="' + d.sources[0].source_url + '" target="_blank">' + d.sources[0].source + '</a>'
       } else if (nSources == 2) {
         d.sources.forEach(function(s, i){
-          sourceHtml += '<a href="' + s.source_url + '" target="_blank">' + s.source + '</a>'
+          sourceHtml += '<a href="' + s.source_url + '" target="_blank">' + s.source + '</a>';
           if (i === 0) {
-            sourceHtml += " and "
+            sourceHtml += " and ";
           }
         })
       } else {
         d.sources.forEach(function(s, i){
-          sourceHtml += '<a href="' + s.source_url + '" target="_blank">' + s.source + '</a>'
+          sourceHtml += '<a href="' + s.source_url + '" target="_blank">' + s.source + '</a>';
           if (i === d.sources.length - 2) {
-            sourceHtml += ", and "
+            sourceHtml += ", and ";
           } else if (i < d.sources.length - 2) {
-            sourceHtml += ", "
+            sourceHtml += ", ";
           }
         })
       }
@@ -360,7 +319,7 @@ Promise.all([
       .attr("class", "note")
       .html(function(d){
         return '<span>Notes:</span> ' + d.notes;
-      })
+      });
 
     divInfo.classed("show", false);
 
