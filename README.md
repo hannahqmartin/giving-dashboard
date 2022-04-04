@@ -119,4 +119,4 @@ Each data object needs the following fields:
 
 ## Trends
 
-The trends are automatically calcualted based on the data and don't need to be specified in the data file.
+The trends are automatically calculated based on the data and don't need to be specified in the data file.
