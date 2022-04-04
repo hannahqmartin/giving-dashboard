@@ -95,16 +95,6 @@ Each data object needs the following fields:
             "date": "",
             "value": ""
         }
-    ],
-    "sources" : [
-        {                            // source #1
-            "source": "",
-            "source_url": ""
-        },
-        {                            // source #2
-            "source": "",
-            "source_url": ""
-        }
     ]
 }
 ```
