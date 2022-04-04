@@ -968,7 +968,11 @@
           "values": [
             {
               "date": "2019",
-              "value": "6.2"
+              "value": "4.8"
+            },
+            {
+              "date": "2020",
+              "value": "6.7"
             }
           ]
         },
@@ -1717,7 +1721,7 @@
         "sources": [
           {
             "source": "GoFundMe",
-            "source_url": "https://www.gofundme.com/2020"
+            "source_url": "https://www.gofundme.com/c/gofundme-giving-report-2021"
           }
         ],
         "notes": "GoFundMe enables individuals to set up crowdfunding campaigns for any purpose. Estimates are sourced from GoFundMe public reports that share estimates of money raised across all campaigns and aggregate all donations made to crowdfunding campaigns across the platform since it was founded in 2010. GoFundMe does not release annual figures."
