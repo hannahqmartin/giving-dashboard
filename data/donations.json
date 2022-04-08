@@ -958,7 +958,7 @@
         "notes": "Estimates are calculated using data from an estimated 154,430 giving accounts in Fidelity Charitable’s internal reporting database. Noncash assets include publicly traded securities (stocks, bonds, and mutual funds) and non–publicly traded assets (private stock, restricted stock, and limited partnership interests)."
       },
       {
-        "name": "Total dollars contributed to DAFs at community foundations",
+        "name": "Total dollars distributed to nonprofits from DAFs at community foundations",
         "data": {
           "unit": "B",
           "unit_string": "In billions of dollars ($)",
