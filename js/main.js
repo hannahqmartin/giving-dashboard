@@ -35,9 +35,9 @@ Promise.all([
 
   let margin;
   if (isMobile) {
-    margin  = {top: 20, right: 30, bottom: 20, left: 50};
+    margin  = {top: 20, right: 30, bottom: 20, left: 55};
   } else {
-    margin  = {top: 10, right: 30, bottom: 10, left: 50};
+    margin  = {top: 10, right: 30, bottom: 10, left: 55};
   }
 
   const width = graphWidth - margin.left - margin.right,
@@ -91,7 +91,7 @@ Promise.all([
           .tickValues(d.data.values.map(v => d.parseDate(v.date)))
           .scale(d.xScale);
       d.yAxis = d3.axisLeft()
-          .tickFormat(t => t + d.data.unit)
+          .tickFormat(t => d3.format(",")(t) + d.data.unit)
           .ticks(Math.max(nTicks, d.data.values.length / 2))
           .scale(d.yScale);
     })
@@ -128,9 +128,9 @@ Promise.all([
         lastNumberPrefix = '';
       }
       if (d.measures[0].data.unit == 'K') {
-        lastNumberLabel = lastNumberPrefix + lastNumber * 1000 + lastNumberSufix;
+        lastNumberLabel = lastNumberPrefix + d3.format(",")(lastNumber * 1000) + lastNumberSufix;
       } else {
-        lastNumberLabel = lastNumberPrefix + lastNumber.toFixed(d.measures[0].data.significant_figures) + lastNumberSufix;
+        lastNumberLabel = lastNumberPrefix + d3.format(",")(lastNumber.toFixed(d.measures[0].data.significant_figures)) + lastNumberSufix;
       }
       let lastDate = thisData[thisData.length - 1].date;
       lastDateLabel = d.measures[0].parseDate(lastDate).getFullYear() + '';
@@ -144,13 +144,13 @@ Promise.all([
         lastChangeLabel = '';
         lastChangeClass = 'empty';
       } else if (lastChange === 0){
-        lastChangeLabel = lastChange + "%";
+        lastChangeLabel = d3.format(",")(lastChange) + "%";
         lastChangeClass = 'neutral';
       } else if (lastChange < 0){
-        lastChangeLabel = -lastChange + "%";
+        lastChangeLabel = d3.format(",")(lastChange) + "%";
         lastChangeClass = 'negative';
       } else {
-        lastChangeLabel = lastChange + "%";
+        lastChangeLabel = d3.format(",")(lastChange) + "%";
         lastChangeClass = 'positive';
       }
 
