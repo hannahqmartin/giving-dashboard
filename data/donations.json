@@ -633,7 +633,7 @@
             "source_url": "https://www.opensecrets.org/elections-overview/donor-demographics?cycle=2020&display=A"
           }
         ],
-        "notes": "Estimates are taken from the Federal Election Commission, aggregated every calendar year (January—December). Fluctuations in political donations year-to-year are in part attributable to election cycles (e.g., presidential elections versus off-year elections)."
+        "notes": "Estimates are taken from the Federal Election Commission, aggregated every calendar year (January—December). Fluctuations in political donations year to year are partially attributable to election cycles (e.g., presidential election years versus off-year elections)."
       },
       {
         "name": "Money donated to WinRed",
@@ -830,7 +830,7 @@
   },
   {
     "name": "Donor-advised funds",
-    "description": "Donor-advised funds (DAFs) are giving accounts established at public charities that allow donors to make a charitable contribution, receive an immediate tax deduction, and recommend grants over time. The public charities maintain legal control over the contributions and works with the donor, who can advise on funding recommendations.",
+    "description": "Donor-advised funds (DAFs) are giving accounts established at public charities that allow donors to make a charitable contribution, receive an immediate tax deduction, and recommend grants over time. The public charities maintain legal control over the contributions and work with the donor, who can advise on funding recommendations.",
     "measures": [
       {
         "name": "Total value of contributions made to DAFs",
