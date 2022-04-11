@@ -255,9 +255,9 @@
   font-size: 14px;
 }
 
- .source, .source a, .source span, .note span, .note {
-   line-height: 21px;
- }
+.source, .source a, .source span, .note span, .note {
+ line-height: 21px;
+}
 
 .source, .source span, .note span {
   font-weight: 700;
@@ -265,6 +265,10 @@
 
 .source {
   margin-bottom: 4px;
+}
+
+.source-connector {
+  font-weight: 400 !important;
 }
 
 

@@ -299,14 +299,14 @@ Promise.all([
         d.sources.forEach(function(s, i){
           sourceHtml += '<a href="' + s.source_url + '" target="_blank">' + s.source + '</a>';
           if (i === 0) {
-            sourceHtml += " and ";
+            sourceHtml += " <span class='source-connector'>and</span> ";
           }
         })
       } else {
         d.sources.forEach(function(s, i){
           sourceHtml += '<a href="' + s.source_url + '" target="_blank">' + s.source + '</a>';
           if (i === d.sources.length - 2) {
-            sourceHtml += ", and ";
+            sourceHtml += "<span class='source-connector'>, and</span> ";
           } else if (i < d.sources.length - 2) {
             sourceHtml += ", ";
           }
