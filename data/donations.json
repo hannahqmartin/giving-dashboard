@@ -1160,7 +1160,7 @@
             "source_url": "https://www.wg-alliance.org/research.html"
           }
         ],
-        "notes": "The Combined Federal Campaign is a federal government workplace giving campaign that enables federal employees and retirees to pledge monetary support to approved charities. Summary figures are released by the Office of Personnel Management and include aggregated pledges to charities by federal employees participating in the campaign."
+        "notes": "The Combined Federal Campaign is a federal workplace-giving campaign that enables federal employees and retirees to pledge monetary support to approved charities. Summary figures are released by the Office of Personnel Management and include aggregated pledges to charities by federal employees participating in the campaign."
       }
     ]
   },
@@ -1228,7 +1228,7 @@
         },
         "sources": [
           {
-            "source": "MasterCard Center for Inclusive Growth",
+            "source": "Mastercard Center for Inclusive Growth",
             "source_url": "https://www.mastercardcenter.org/insights/highlights-techsoup-webinar"
           }
         ],
@@ -1255,11 +1255,11 @@
         },
         "sources": [
           {
-            "source": "MasterCard Center for Inclusive Growth",
+            "source": "Mastercard Center for Inclusive Growth",
             "source_url": "https://www.mastercardcenter.org/insights/dynamics-charitable-giving"
           }
         ],
-        "notes": "Estimates use anonymized and aggregated Mastercard transaction data to provide an analysis of current and historical donation trends."
+        "notes": "These estimates use anonymized and aggregated Mastercard transaction data to provide an analysis of current and historical donation trends."
       }
     ]
   },
@@ -1420,7 +1420,7 @@
     "description": "One of the distinguishing characteristics of charitable giving in the United States has long been the large share of Americans who report giving to charitable organizations. But some research suggests that in recent years, this share has steadily declined. Whether this decline in the “donor pool” reflects a lessening or a rechanneling of charitable giving is a major question confronting researchers.",
     "measures": [
       {
-        "name": "Share of US households that reported donating money to one or more charitable organization the previous year",
+        "name": "Share of US households that reported donating money to one or more charitable organizations the previous year",
         "data": {
           "unit": "%",
           "unit_string": "",
