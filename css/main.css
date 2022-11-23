@@ -2,6 +2,18 @@ header-pinned/*HEADER*/
 body{
     margin:0px;
 }
+
+p.note_block{
+  font-weight: 200;
+  max-width: 720px;
+  margin: 28px auto;
+  line-height: 32.5px;
+  background-color: #ececec;
+  padding: 20px;
+  width: 100%;
+
+}
+
 #header-pinned {
     font: 16px Lato;
     color: #333;
@@ -772,6 +784,11 @@ p.creditsWho > a {
   }
 
   p.general {
+    line-height: 27px;
+  }
+
+  p.note_block {
+    padding: 20px;
     line-height: 27px;
   }
 
