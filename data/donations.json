@@ -850,7 +850,7 @@
             "source_url": "https://givingusa.org/"
           }
         ],
-        "notes": "Estimates rely on econometric methods developed by the Indiana University Lilly Family School of Philanthropy and tabulation of tax data, economic indicators, and demographics. In our November 29, 2022 updated, we corrected the 2018 data point, which had been rounded incorrectly. We changed $39.72 billion to $39.71 billion."
+        "notes": "Estimates rely on econometric methods developed by the Indiana University Lilly Family School of Philanthropy and tabulation of tax data, economic indicators, and demographics. In our November 29, 2022 update, we corrected the 2018 data point, which had been rounded incorrectly. We changed $39.72 billion to $39.71 billion."
       },
       {
         "name": "Share of total charitable contributions given through bequests",
@@ -1626,10 +1626,6 @@
               "value": "59"
             },
             {
-              "date": "2014",
-              "value": "56"
-            },
-            {
               "date": "2016",
               "value": "53"
             },
@@ -1787,7 +1783,7 @@
         "sources": [
           {
             "source": "AFP/Fundraising Effectiveness Project",
-            "source_url": "https://afpglobal.org/fepreportsdownloadcenter"
+            "source_url": "https://afpglobal.org/FundraisingEffectivenessProject"
           }
         ],
         "notes": "Estimates are provided by the AFP/Fundraising Effectiveness Project."
@@ -1820,7 +1816,7 @@
         "sources": [
           {
             "source": "ioby",
-            "source_url": ""
+            "source_url": "https://ioby.org/"
           }
         ],
         "notes": "Estimates are pulled from raw data provided by ioby, a crowdfunding platform. Because the 2020 estimate only contains data from March through December of that year, the comparison with 2021 is incomplete, but we include it to contextualize change over time. The totals do not include matched contributions made by ioby."
@@ -1878,19 +1874,19 @@
           "significant_figures": "0",
           "values": [
             {
-              "date": "Dec 2017",
+              "date": "2017",
               "value": "5"
             },
             {
-              "date": "Dec 2019",
+              "date": "2019",
               "value": "9"
             },
             {
-              "date": "Jul 2020",
+              "date": "2020",
               "value": "10"
             },
             {
-              "date": "Jul 2021",
+              "date": "2021",
               "value": "15"
             }
           ]
@@ -2026,6 +2022,10 @@
             {
               "date": "2021",
               "value": "2.7"
+            },
+            {
+              "date": "2022",
+              "value": "3.1"
             }
           ]
         },
